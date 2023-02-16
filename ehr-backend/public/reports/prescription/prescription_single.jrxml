@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="prescript" language="groovy" pageWidth="308" pageHeight="417" columnWidth="268" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0c6a5cac-4046-4fed-b57d-18db9ded849a">
+	<property name="ireport.zoom" value="3.138428376721061"/>
+	<property name="ireport.x" value="98"/>
+	<property name="ireport.y" value="185"/>
+	<parameter name="encounter" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="items" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="name" class="java.lang.String"/>
+	<parameter name="age" class="java.lang.String"/>
+	<parameter name="sex" class="java.lang.String"/>
+	<parameter name="address" class="java.lang.String"/>
+	<parameter name="date" class="java.lang.String"/>
+	<parameter name="doctor" class="java.lang.String"/>
+	<parameter name="imgpath" class="java.lang.String"/>
+	<parameter name="logo_path" class="java.lang.String"/>
+	<parameter name="rx_logo" class="java.lang.String"/>
+	<parameter name="license" class="java.lang.String"/>
+	<parameter name="prescribe_date" class="java.lang.String"/>
+	<parameter name="physician" class="java.lang.String"/>
+	<parameter name="img_footer" class="java.lang.String"/>
+	<parameter name="pid" class="java.lang.String"/>
+	<parameter name="bod" class="java.lang.String"/>
+	<parameter name="ptr" class="java.lang.String"/>
+	<parameter name="visit_dt" class="java.lang.String"/>
+	<parameter name="visit_type" class="java.lang.String"/>
+	<parameter name="instruction" class="java.lang.String"/>
+	<parameter name="clinic" class="java.lang.String"/>
+	<parameter name="s2_nr" class="java.lang.String"/>
+	<field name="brand_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="meds" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="remarks" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sig" class="java.lang.String"/>
+	<field name="qty" class="java.lang.String"/>
+	<field name="no" class="java.lang.String"/>
+	<pageHeader>
+		<band height="162" splitType="Stretch">
+			<image>
+				<reportElement x="10" y="138" width="18" height="18" uuid="d92d6224-c44f-4057-a596-dd25203ab289"/>
+				<imageExpression><![CDATA[$P{rx_logo}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="11" y="7" width="100" height="11" uuid="c22bb3bb-a0e3-49f1-8099-2bb79613076f"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[SPMC FORM NO. 70]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="16" width="100" height="11" uuid="e4596f94-b6e7-43e0-a199-7e84dc6c5905"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Revised 2012]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="34" width="268" height="17" uuid="dec5d84e-130b-4325-999f-48c4029b1f3f"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Southern Philippines Medical Center]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="45" width="268" height="17" uuid="55a37e3f-c25e-4359-a843-0c4fda66a6ac"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[J.P. Laurel Bajada, Davao City]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="12" y="69" width="41" height="17" uuid="e2dba7a0-6095-4a45-a7ff-49a45910db85"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[HRN:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="12" y="80" width="41" height="17" uuid="3e738477-c44e-44ab-bfbc-578912d7aaa6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="12" y="92" width="41" height="17" uuid="61ba89f6-fceb-4b52-b4c0-7337470378a5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Age:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="12" y="104" width="52" height="17" uuid="da90eb87-0103-4e25-8096-be1b6456483a"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Address:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="69" width="41" height="17" uuid="8753b189-ab00-4246-9c95-6e448f765f8d"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Case #:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="92" width="41" height="17" uuid="21678a14-905c-4b47-89cf-5d0a99e296ef"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Sex:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="133" y="92" width="46" height="17" uuid="dff48730-ccc3-4f4f-a3b9-4a5455d9f4bc"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Clinic:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="125" y="131" width="52" height="17" uuid="4cb46817-cb4f-44be-b2b4-b14cb8aa37b5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="40" y="72" width="100" height="20" uuid="6c3b062d-0f27-4358-8977-67ee1a8f5bfe"/>
+				<textFieldExpression><![CDATA[$P{pid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="46" y="83" width="179" height="20" uuid="66436353-f7c6-43fe-a2c7-694b87e3981f"/>
+				<textFieldExpression><![CDATA[$P{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="186" y="72" width="70" height="20" uuid="58cf84c9-ca02-4898-be5f-3f6f52ecf97d"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{encounter} == null ? '': $P{encounter}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="94" width="48" height="20" uuid="dcad4fdc-ba0a-417b-9db5-cf92b37b6272"/>
+				<textFieldExpression><![CDATA[$P{sex}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="51" y="109" width="205" height="22" uuid="df995bd0-6620-4613-ad31-874a096abe49"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="174" y="134" width="100" height="20" uuid="27fa42e2-202c-4121-b98b-172e9649d013"/>
+				<textFieldExpression><![CDATA[$P{prescribe_date}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="159" y="93" width="100" height="23" uuid="c83c04dd-5f21-4d0b-a788-26105bbb4a11"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{clinic}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="34" y="91" width="56" height="20" uuid="e2ce0325-09f2-4e8d-83ae-610e895503ce"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{age}+' yrs old']]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="67" splitType="Stretch">
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="12" y="-2" width="213" height="15" isPrintWhenDetailOverflows="true" uuid="f98e4cb4-0e7d-47b7-acc0-bfebbb03f4ae"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{meds}+' Qty #'+$F{qty}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="13" y="13" width="235" height="12" isPrintWhenDetailOverflows="true" uuid="704c8bdf-b132-4f4c-bba8-18e1121f1cdd"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sig}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="100" splitType="Stretch">
+			<staticText>
+				<reportElement x="150" y="42" width="52" height="17" uuid="eb7f108c-7f41-40af-adbb-c6d4239d50d4"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Lic. #]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="53" width="52" height="17" uuid="44338383-c2dd-47d3-868f-7cabe7c4858c"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[S2 #]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="90" y="28" width="178" height="20" uuid="030c2593-7fbc-4dc4-bc91-b7e5171a58fe"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{physician}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="179" y="44" width="89" height="20" uuid="c4cd132b-25fc-4214-9af6-d2b704ee0c5b"/>
+				<textFieldExpression><![CDATA[$P{license}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="179" y="55" width="89" height="20" uuid="bf7a70fc-aae0-4a8d-8729-f5fd2db13bc8"/>
+				<textFieldExpression><![CDATA[$P{s2_nr}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="27"/>
+	</pageFooter>
+</jasperReport>

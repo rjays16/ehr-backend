@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="consent_care" language="groovy" pageWidth="612" pageHeight="792" columnWidth="506" leftMargin="53" rightMargin="53" topMargin="20" bottomMargin="20" isIgnorePagination="true" uuid="709fb1af-6eeb-4861-b68c-3a4907267102">
+	<property name="ireport.zoom" value="1.5000000000000107"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="632"/>
+	<parameter name="patient_name" class="java.lang.String"/>
+	<parameter name="psg_two" class="java.lang.String"/>
+	<parameter name="logo_path" class="java.lang.String"/>
+	<parameter name="footer_img" class="java.lang.String"/>
+	<parameter name="witness_name" class="java.lang.String"/>
+	<field name="patient_name" class="java.lang.String"/>
+	<field name="psg_one" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79">
+			<staticText>
+				<reportElement x="170" y="0" width="179" height="64" uuid="01ced652-1d0b-478d-b6cc-0506f9bf56b5"/>
+				<box>
+					<pen lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#333333"/>
+					<leftPen lineWidth="0.5" lineColor="#333333"/>
+					<bottomPen lineWidth="0.5" lineColor="#333333"/>
+					<rightPen lineWidth="0.5" lineColor="#333333"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="170" height="64" uuid="73e02ccc-64f2-468a-b6cf-3307a0e28e33"/>
+				<box>
+					<pen lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#333333"/>
+					<leftPen lineWidth="0.5" lineColor="#333333"/>
+					<bottomPen lineWidth="0.5" lineColor="#333333"/>
+					<rightPen lineWidth="0.5" lineColor="#333333"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="349" y="0" width="157" height="64" uuid="ef01e279-476f-4e16-b0fd-b9b375c14e51"/>
+				<box>
+					<pen lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#333333"/>
+					<leftPen lineWidth="0.5" lineColor="#333333"/>
+					<bottomPen lineWidth="0.5" lineColor="#333333"/>
+					<rightPen lineWidth="0.5" lineColor="#333333"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="7" y="9" width="146" height="45" uuid="b98050a5-e311-4f23-bc87-9784caa76e64"/>
+				<imageExpression><![CDATA[$P{logo_path}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="196" y="10" width="125" height="42" uuid="29121c40-a5d2-4f47-b5f0-1d5b72996f33"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Consent to Care and Treatment]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="378" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Transparent" x="0" y="8" width="506" height="17" uuid="eb7f0934-ed69-41dc-8e0b-4dd684fd67c4"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="9" isItalic="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[* valid only for 24 hours and per patients visit to the clinic]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="52" width="506" height="76" uuid="313eb13b-2abd-457e-9439-eb0419be7ece"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph leftIndent="5" rightIndent="5"/>
+				</textElement>
+				<text><![CDATA[I, the undersigned, a Patient/Legally Authorized Representative (LAR) of Maayo Medical Clinic (MMC), do hereby authorize the Medical Staffs to administer or perform medical examination, assessment, diagnostic procedures and/or treatment. I further certify that no guarantee or assurance has been made as to the results that may be obtained. I have read and understand this consent and I provide my consent voluntarily by signing this consent.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="32" width="506" height="20" uuid="21de476e-0b2c-4ae9-a8f1-aecdd981442e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[AUTHORIZATION FOR MEDICAL TREATMENT]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="128" width="506" height="118" uuid="a63f34a0-dae6-4287-9eaa-f75977edaa1c"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="15" y="130" width="491" height="20" uuid="9c280766-2893-40f2-b7d5-293fddb8b947"/>
+				<textElement>
+					<font size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ ACKNOWLEDGEMENT OF RECEIPT OF PATIENT’S RIGHT AND RESPONSIBILITIES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="154" width="506" height="73" uuid="7636ea78-8f02-40c1-9c91-d9ad415e5a43"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="9" isBold="false"/>
+					<paragraph leftIndent="5" rightIndent="7"/>
+				</textElement>
+				<text><![CDATA[Maayo Medical Clinic (MMC) may disclose all or any part of the Patient’s record to any person or corporation,which is or may be liable or under a contract to Maayo Medical Clinic (MMC) or to a family member or employer of the patient for treatment, payment and healthcare operations purposes. Disclosure of healthcare information may include the use of electronic transmitting technologies. Maayo Medical Clinic (MMC) may also report patient information to a government agency as required by law. Maayo Medical Clinic (MMC) ensures the patient record is protected and secure during such disclosure.]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="246" width="506" height="88" uuid="540c2224-3fd5-43ff-838b-f2bd8c538e11"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="246" width="452" height="20" uuid="94aeb68a-10b0-4db1-a4c9-3f2ce54596a8"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+					<paragraph leftIndent="3"/>
+				</textElement>
+				<text><![CDATA[DO YOU/PATIENT HAVE MEDICARE INSURANCE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="266" width="506" height="68" uuid="335fc97b-8278-4b99-a8de-fbc22b7504f2"/>
+				<textElement textAlignment="Justified">
+					<font size="9" isBold="false"/>
+					<paragraph leftIndent="3" rightIndent="7"/>
+				</textElement>
+				<text><![CDATA[			                     In the event the undersigned is entitled to Maayo Medical Clinic (MMC) benefits of any type whatsoever arising out of any policy of insurance. Patient or any other party liable to patient, said benefits are hereby assigned to the Maayo Medical Clinic (MMC) for application of patient’s bill. The assignment of such benefits shall in no way obligate the institution to delay or relinquish its demand for direct payment form the Patient for any of the outstanding balance.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="265" width="276" height="13" uuid="3b3df392-a0c7-4acb-88af-7b08a1f43fe0"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+					<paragraph leftIndent="3"/>
+				</textElement>
+				<text><![CDATA[ASSIGNMENT OF INSURANCE BENEFITS: ]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="334" width="506" height="32" uuid="dd19cda0-bb8e-430f-bb6e-3dcec7761637"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="2" y="336" width="261" height="13" uuid="ed811237-2d8c-44b7-8726-b9f78f4325e4"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PATIENT’S RESPONSIBILITY:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="336" width="504" height="30" uuid="1042ef37-cd5c-4445-8629-e19a82cf89b1"/>
+				<textElement>
+					<font size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[			      Any service/medication ordered by attending physician and not paid by your
+insurance company/representative shall be your direct responsibility for payment.]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="7" y="134" width="6" height="6" uuid="87a66f13-43c0-4409-b621-5310b6d8f5cd"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="256" y="252" width="7" height="7" uuid="0d77cb5b-bc8f-4dd1-8528-2b75459435ce"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="303" y="252" width="7" height="7" uuid="9734141b-ff9f-45ae-a7e8-8f75b8cf2046"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="263" y="249" width="29" height="12" uuid="00f25165-d949-45f6-9b47-4d7f1933f815"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="310" y="249" width="29" height="12" uuid="5100e7a9-ac29-431f-81cd-7059f69bc1da"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="141" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="1" width="210" height="29" isPrintWhenDetailOverflows="true" uuid="406c4cad-e46b-4e7e-b565-1d089a238b15"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="210" y="1" width="157" height="29" isPrintWhenDetailOverflows="true" uuid="7e0fbf3b-6aab-4902-a907-28b20932dd2a"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="367" y="1" width="139" height="29" isPrintWhenDetailOverflows="true" uuid="f48cc2d3-c3af-402c-ad9c-1195f6db472a"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="30" width="210" height="13" backcolor="#CCCCCC" uuid="ffa14506-732f-4850-b78b-e92196d97afe"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Patient’s Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="210" y="30" width="157" height="13" backcolor="#CCCCCC" uuid="dbae120c-460d-4898-b410-ef4d41fbe74c"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Signature]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="367" y="30" width="139" height="13" backcolor="#CCCCCC" uuid="45c1261e-395a-466b-bdb9-83c664b54fd3"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="43" width="210" height="29" isPrintWhenDetailOverflows="true" uuid="c1ca9d33-1b4f-41a6-b2da-fa041a3ff29b"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="210" y="43" width="157" height="29" isPrintWhenDetailOverflows="true" uuid="7c5f43aa-2240-48bc-a50f-ca88b1ab4c24"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="367" y="43" width="139" height="29" isPrintWhenDetailOverflows="true" uuid="25f8ffad-7550-47db-ab89-65dc43b33736"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="72" width="210" height="13" backcolor="#CCCCCC" uuid="8d22b0f9-3aae-47ce-8961-1c2cfc5a34bd"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name of Legally Authorized Representative]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="210" y="72" width="157" height="13" backcolor="#CCCCCC" uuid="671681b1-dcb2-4fef-8927-0d8d87951bb5"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Signature]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="367" y="72" width="139" height="13" backcolor="#CCCCCC" uuid="2ef32f14-2c00-435c-8409-b11cafeb55e5"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="85" width="210" height="29" isPrintWhenDetailOverflows="true" uuid="d1e44b34-6297-4907-b5b0-096aae9e2950"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="210" y="85" width="157" height="29" isPrintWhenDetailOverflows="true" uuid="21926cdc-e089-47b0-882a-420ed1e8df75"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="367" y="85" width="139" height="29" isPrintWhenDetailOverflows="true" uuid="9caf6a05-4bc8-47f6-b67e-e2e6319efb43"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="114" width="210" height="13" backcolor="#CCCCCC" uuid="a4455fc0-6b30-4fca-ab42-7bef9c22d017"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Witness Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="210" y="114" width="157" height="13" backcolor="#CCCCCC" uuid="d23486a0-f707-48c8-8510-396388e8bdca"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Signature]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="367" y="114" width="139" height="13" backcolor="#CCCCCC" uuid="8b7f68bf-d261-4335-a27f-d788d52fc950"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="0" y="6" width="210" height="20" isPrintWhenDetailOverflows="true" uuid="bb73a4ef-9b61-449a-aa8a-c5e3978dc525"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{patient_name}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="367" y="6" width="139" height="20" uuid="dd7de360-f472-4379-9ec5-a3570c18ceb9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{psg_one}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="367" y="89" width="139" height="20" uuid="d646e33e-775f-4f39-947f-54cf7b705917"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{psg_one}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="90" width="210" height="20" uuid="38b2028c-a37b-4c64-b1db-0e63323b34db"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{witness_name}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="101">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="506" height="15" backcolor="#CCCCCC" uuid="448ef12e-5da8-4962-ab62-7ea0badb27cb"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[  Interpreter’s Declaration]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="127" y="1" width="100" height="13" uuid="03e0f1a9-402d-4b0e-847a-34708eb7b02a"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[(if needed)]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="15" width="506" height="37" uuid="aa83c6d9-942b-4cfe-acb1-6385ac12ec39"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="18" width="506" height="15" uuid="02d6138b-43f6-4b1b-9980-84e7cf732d20"/>
+				<textElement textAlignment="Justified">
+					<font size="9" isBold="false"/>
+					<paragraph leftIndent="3"/>
+				</textElement>
+				<text><![CDATA[Specific language requirement (if any) ________________________________.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="52" width="170" height="28" backcolor="#FFFFFF" uuid="9f4e5ed3-7dfa-416d-bb43-52f6a2aa5cd1"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="170" y="52" width="179" height="28" backcolor="#FFFFFF" uuid="d2381f43-1027-4eb7-9a06-579a9113e594"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="349" y="52" width="157" height="28" backcolor="#FFFFFF" uuid="c5f2f6db-486f-412b-8811-e6fbef4fd505"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="170" y="80" width="179" height="13" backcolor="#CCCCCC" uuid="166eebd5-3418-4aa8-9968-6022bf8c55cf"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Signature]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="80" width="170" height="13" backcolor="#CCCCCC" uuid="90d91eb9-f388-4c99-9eac-32899e0cb1d3"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Interpreter’s Full Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="349" y="80" width="157" height="13" backcolor="#CCCCCC" uuid="42aaac30-364b-4186-9164-cf04c5673770"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="32" width="506" height="15" uuid="16257727-a3e2-48b7-9408-9d568747d027"/>
+				<textElement>
+					<font size="9"/>
+					<paragraph leftIndent="3"/>
+				</textElement>
+				<text><![CDATA[I declare that I have interpreted the dialogue between the patient and Physician/Nurseof the best of my ability]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="118" splitType="Stretch">
+			<image hAlign="Center">
+				<reportElement x="40" y="76" width="438" height="25" uuid="1d68754a-307a-4fb5-b151-072787509374"/>
+				<imageExpression><![CDATA[$P{footer_img}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="310" y="101" width="191" height="17" uuid="43419fae-433b-4368-8cec-e5b0a272c87e"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{psg_two}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+</jasperReport>

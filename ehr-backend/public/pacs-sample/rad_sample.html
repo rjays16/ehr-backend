@@ -1,0 +1,1103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="Head1">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta name="COPYRIGHT" content="© 2008 Novarad Corp"><meta content="JavaScript" name="vs_defaultClientScript"><meta http-equiv="imagetoolbar" content="no"><link href="NovaPacs%20Lite%20Viewer_files/style.css" rel="Stylesheet" type="text/css"><link href="NovaPacs%20Lite%20Viewer_files/Animation.css" rel="Stylesheet" type="text/css">
+
+	<script language="javascript" src="NovaPacs%20Lite%20Viewer_files/AjaxAbstraction.js" type="text/javascript"></script>
+	<script language="javascript" src="NovaPacs%20Lite%20Viewer_files/dock.js" type="text/javascript"></script>
+	<script language="javascript" src="NovaPacs%20Lite%20Viewer_files/jquery_002.js" type="text/javascript"></script>
+	<script language="javascript" src="NovaPacs%20Lite%20Viewer_files/jquery.js" type="text/javascript"></script>
+	<script language="javascript" src="NovaPacs%20Lite%20Viewer_files/onUserExit.js" type="text/javascript"></script>
+	<script src="NovaPacs%20Lite%20Viewer_files/AjaxMethods.js" language="javascript" type="text/javascript"></script>
+	<style type="text/css">
+		img { behavior: url(iepngfix.htc); } 
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$().onUserExit({
+				execute: function () {
+					PageMethods.Logout();
+				},
+				internalURLs: "novaweb/lite"
+			});
+		});
+
+		
+	</script>
+
+	 <!--Uncomment these lines to enable javascript tracing. -->
+	<!--
+    <script language="javascript" type="text/javascript" src="Scripts/jsTrace.js"></script>
+	<script language="javascript" type="text/javascript" src="Scripts/dom-drag.js"></script>
+    -->
+<link href="NovaPacs%20Lite%20Viewer_files/WebResource.css" type="text/css" rel="stylesheet"><title>
+	NovaPacs Lite Viewer
+</title><style type="text/css">
+	.Unnamed2_TreeView1_0 { color:Blue;text-decoration:none; }
+	.Unnamed2_TreeView1_1 { color:#292928; }
+	.Unnamed2_TreeView1_2 {  }
+	.Unnamed2_TreeView1_3 { color:#292928; }
+	.Unnamed2_TreeView1_4 {  }
+
+</style></head>
+<body oncontextmenu="return false;" onload="init();" id="myBody" style="background-color:Black;" vlink="gray" link="Black" alink="black">
+	<form name="form" method="post" action="./Viewer.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="form">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
+<input type="hidden" name="Unnamed2_TreeView1_ExpandState" id="Unnamed2_TreeView1_ExpandState" value="ennnnnennnnen">
+<input type="hidden" name="Unnamed2_TreeView1_SelectedNode" id="Unnamed2_TreeView1_SelectedNode" value="">
+<input type="hidden" name="Unnamed2_TreeView1_PopulateLog" id="Unnamed2_TreeView1_PopulateLog" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="NovaPacs%20Lite%20Viewer_files/WebResource.js" type="text/javascript"></script>
+
+
+<script src="NovaPacs%20Lite%20Viewer_files/ScriptResource_006.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+
+    function TreeView_PopulateNodeDoCallBack(context,param) {
+        WebForm_DoCallback(context.data.treeViewID,param,TreeView_ProcessNodeData,context,TreeView_ProcessNodeData,false);
+    }
+var Unnamed2_TreeView1_Data = null;//]]>
+</script>
+
+<script src="NovaPacs%20Lite%20Viewer_files/ScriptResource_005.js" type="text/javascript"></script>
+<script src="NovaPacs%20Lite%20Viewer_files/ScriptResource_004.js" type="text/javascript"></script>
+<script src="NovaPacs%20Lite%20Viewer_files/ScriptResource.js" type="text/javascript"></script>
+<script src="NovaPacs%20Lite%20Viewer_files/ScriptResource_003.js" type="text/javascript"></script>
+<script src="NovaPacs%20Lite%20Viewer_files/ScriptResource_009.axd" type="text/javascript"></script>
+<script src="NovaPacs%20Lite%20Viewer_files/ScriptResource_008.axd" type="text/javascript"></script>
+<script src="NovaPacs%20Lite%20Viewer_files/ScriptResource_013.axd" type="text/javascript"></script>
+<script src="NovaPacs%20Lite%20Viewer_files/ScriptResource_002.axd" type="text/javascript"></script>
+<script src="NovaPacs%20Lite%20Viewer_files/ScriptResource_007.axd" type="text/javascript"></script>
+<script src="NovaPacs%20Lite%20Viewer_files/ScriptResource_011.axd" type="text/javascript"></script>
+<script src="NovaPacs%20Lite%20Viewer_files/ScriptResource_004.axd" type="text/javascript"></script>
+<script src="NovaPacs%20Lite%20Viewer_files/ScriptResource_015.axd" type="text/javascript"></script>
+<script src="NovaPacs%20Lite%20Viewer_files/ScriptResource_010.axd" type="text/javascript"></script>
+<script src="NovaPacs%20Lite%20Viewer_files/ScriptResource_017.axd" type="text/javascript"></script>
+<script src="NovaPacs%20Lite%20Viewer_files/ScriptResource.axd" type="text/javascript"></script>
+<script src="NovaPacs%20Lite%20Viewer_files/ScriptResource_016.axd" type="text/javascript"></script>
+<script src="NovaPacs%20Lite%20Viewer_files/ScriptResource_005.axd" type="text/javascript"></script>
+<script src="NovaPacs%20Lite%20Viewer_files/ScriptResource_007.js" type="text/javascript"></script>
+<script src="NovaPacs%20Lite%20Viewer_files/ScriptResource_002.js" type="text/javascript"></script>
+<script src="NovaPacs%20Lite%20Viewer_files/ScriptResource_014.axd" type="text/javascript"></script>
+<script src="NovaPacs%20Lite%20Viewer_files/ScriptResource_012.axd" type="text/javascript"></script>
+<script src="NovaPacs%20Lite%20Viewer_files/ScriptResource_006.axd" type="text/javascript"></script>
+<script src="NovaPacs%20Lite%20Viewer_files/ScriptResource_003.axd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var PageMethods = function() {
+PageMethods.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+PageMethods.prototype = {
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return PageMethods._staticInstance.get_path();},
+GetAllSeries:function(comparison,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetAllSeries',false,{comparison:comparison},succeededCallback,failedCallback,userContext); },
+GetImageScale:function(comparison,seriesUID,imageUID,divHeight,divWidth,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetImageScale',false,{comparison:comparison,seriesUID:seriesUID,imageUID:imageUID,divHeight:divHeight,divWidth:divWidth},succeededCallback,failedCallback,userContext); },
+GetSeriesImageNums:function(comparison,seriesUID,divHeight,divWidth,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetSeriesImageNums',false,{comparison:comparison,seriesUID:seriesUID,divHeight:divHeight,divWidth:divWidth},succeededCallback,failedCallback,userContext); },
+GetReportURL:function(comparison,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetReportURL',false,{comparison:comparison},succeededCallback,failedCallback,userContext); },
+ComparisonObjects:function(create,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'ComparisonObjects',false,{create:create},succeededCallback,failedCallback,userContext); },
+GetSeriesLiteObject:function(comparison,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetSeriesLiteObject',false,{comparison:comparison},succeededCallback,failedCallback,userContext); },
+GetSeriesDatas:function(succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetSeriesDatas',false,{},succeededCallback,failedCallback,userContext); },
+GetModalityWindowLevelOptions:function(modality,isComparison,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetModalityWindowLevelOptions',false,{modality:modality,isComparison:isComparison},succeededCallback,failedCallback,userContext); },
+SetWindowLevelSessionValues:function(windowValue,levelValue,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'SetWindowLevelSessionValues',false,{windowValue:windowValue,levelValue:levelValue},succeededCallback,failedCallback,userContext); },
+InValidSession:function(succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'InValidSession',false,{},succeededCallback,failedCallback,userContext); },
+Audit:function(comp,msg,details,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'Audit',false,{comp:comp,msg:msg,details:details},succeededCallback,failedCallback,userContext); },
+SetActiveWindow:function(window,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'SetActiveWindow',false,{window:window},succeededCallback,failedCallback,userContext); },
+GetFirstSeries:function(studyUID,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetFirstSeries',false,{studyUID:studyUID},succeededCallback,failedCallback,userContext); },
+FetchAuthenticationTicket:function(url,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'FetchAuthenticationTicket',false,{url:url},succeededCallback,failedCallback,userContext); },
+RetrieveVoiceAnnotation:function(annotationSelectedToPlay,comparison,seriesUID,imgNum,width,height,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'RetrieveVoiceAnnotation',false,{annotationSelectedToPlay:annotationSelectedToPlay,comparison:comparison,seriesUID:seriesUID,imgNum:imgNum,width:width,height:height},succeededCallback,failedCallback,userContext); },
+GetLocalizedCompressionStrings:function(succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetLocalizedCompressionStrings',false,{},succeededCallback,failedCallback,userContext); },
+Logout:function(succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'Logout',false,{},succeededCallback,failedCallback,userContext); }}
+PageMethods.registerClass('PageMethods',Sys.Net.WebServiceProxy);
+PageMethods._staticInstance = new PageMethods();
+PageMethods.set_path = function(value) { PageMethods._staticInstance.set_path(value); }
+PageMethods.get_path = function() { return PageMethods._staticInstance.get_path(); }
+PageMethods.set_timeout = function(value) { PageMethods._staticInstance.set_timeout(value); }
+PageMethods.get_timeout = function() { return PageMethods._staticInstance.get_timeout(); }
+PageMethods.set_defaultUserContext = function(value) { PageMethods._staticInstance.set_defaultUserContext(value); }
+PageMethods.get_defaultUserContext = function() { return PageMethods._staticInstance.get_defaultUserContext(); }
+PageMethods.set_defaultSucceededCallback = function(value) { PageMethods._staticInstance.set_defaultSucceededCallback(value); }
+PageMethods.get_defaultSucceededCallback = function() { return PageMethods._staticInstance.get_defaultSucceededCallback(); }
+PageMethods.set_defaultFailedCallback = function(value) { PageMethods._staticInstance.set_defaultFailedCallback(value); }
+PageMethods.get_defaultFailedCallback = function() { return PageMethods._staticInstance.get_defaultFailedCallback(); }
+PageMethods.set_enableJsonp = function(value) { PageMethods._staticInstance.set_enableJsonp(value); }
+PageMethods.get_enableJsonp = function() { return PageMethods._staticInstance.get_enableJsonp(); }
+PageMethods.set_jsonpCallbackParameter = function(value) { PageMethods._staticInstance.set_jsonpCallbackParameter(value); }
+PageMethods.get_jsonpCallbackParameter = function() { return PageMethods._staticInstance.get_jsonpCallbackParameter(); }
+PageMethods.set_path("Viewer.aspx");
+PageMethods.GetAllSeries= function(comparison,onSuccess,onFailed,userContext) {PageMethods._staticInstance.GetAllSeries(comparison,onSuccess,onFailed,userContext); }
+PageMethods.GetImageScale= function(comparison,seriesUID,imageUID,divHeight,divWidth,onSuccess,onFailed,userContext) {PageMethods._staticInstance.GetImageScale(comparison,seriesUID,imageUID,divHeight,divWidth,onSuccess,onFailed,userContext); }
+PageMethods.GetSeriesImageNums= function(comparison,seriesUID,divHeight,divWidth,onSuccess,onFailed,userContext) {PageMethods._staticInstance.GetSeriesImageNums(comparison,seriesUID,divHeight,divWidth,onSuccess,onFailed,userContext); }
+PageMethods.GetReportURL= function(comparison,onSuccess,onFailed,userContext) {PageMethods._staticInstance.GetReportURL(comparison,onSuccess,onFailed,userContext); }
+PageMethods.ComparisonObjects= function(create,onSuccess,onFailed,userContext) {PageMethods._staticInstance.ComparisonObjects(create,onSuccess,onFailed,userContext); }
+PageMethods.GetSeriesLiteObject= function(comparison,onSuccess,onFailed,userContext) {PageMethods._staticInstance.GetSeriesLiteObject(comparison,onSuccess,onFailed,userContext); }
+PageMethods.GetSeriesDatas= function(onSuccess,onFailed,userContext) {PageMethods._staticInstance.GetSeriesDatas(onSuccess,onFailed,userContext); }
+PageMethods.GetModalityWindowLevelOptions= function(modality,isComparison,onSuccess,onFailed,userContext) {PageMethods._staticInstance.GetModalityWindowLevelOptions(modality,isComparison,onSuccess,onFailed,userContext); }
+PageMethods.SetWindowLevelSessionValues= function(windowValue,levelValue,onSuccess,onFailed,userContext) {PageMethods._staticInstance.SetWindowLevelSessionValues(windowValue,levelValue,onSuccess,onFailed,userContext); }
+PageMethods.InValidSession= function(onSuccess,onFailed,userContext) {PageMethods._staticInstance.InValidSession(onSuccess,onFailed,userContext); }
+PageMethods.Audit= function(comp,msg,details,onSuccess,onFailed,userContext) {PageMethods._staticInstance.Audit(comp,msg,details,onSuccess,onFailed,userContext); }
+PageMethods.SetActiveWindow= function(window,onSuccess,onFailed,userContext) {PageMethods._staticInstance.SetActiveWindow(window,onSuccess,onFailed,userContext); }
+PageMethods.GetFirstSeries= function(studyUID,onSuccess,onFailed,userContext) {PageMethods._staticInstance.GetFirstSeries(studyUID,onSuccess,onFailed,userContext); }
+PageMethods.FetchAuthenticationTicket= function(url,onSuccess,onFailed,userContext) {PageMethods._staticInstance.FetchAuthenticationTicket(url,onSuccess,onFailed,userContext); }
+PageMethods.RetrieveVoiceAnnotation= function(annotationSelectedToPlay,comparison,seriesUID,imgNum,width,height,onSuccess,onFailed,userContext) {PageMethods._staticInstance.RetrieveVoiceAnnotation(annotationSelectedToPlay,comparison,seriesUID,imgNum,width,height,onSuccess,onFailed,userContext); }
+PageMethods.GetLocalizedCompressionStrings= function(onSuccess,onFailed,userContext) {PageMethods._staticInstance.GetLocalizedCompressionStrings(onSuccess,onFailed,userContext); }
+PageMethods.Logout= function(onSuccess,onFailed,userContext) {PageMethods._staticInstance.Logout(onSuccess,onFailed,userContext); }
+var gtc = Sys.Net.WebServiceProxy._generateTypedConstructor;
+Type.registerNamespace('Novarad.Applications.LiteViewer');
+if (typeof(Novarad.Applications.LiteViewer.StudyLiteData) === 'undefined') {
+Novarad.Applications.LiteViewer.StudyLiteData=gtc("Novarad.Applications.LiteViewer.StudyLiteData");
+Novarad.Applications.LiteViewer.StudyLiteData.registerClass('Novarad.Applications.LiteViewer.StudyLiteData');
+}
+if (typeof(Novarad.Applications.LiteViewer.SeriesLiteData) === 'undefined') {
+Novarad.Applications.LiteViewer.SeriesLiteData=gtc("Novarad.Applications.LiteViewer.SeriesLiteData");
+Novarad.Applications.LiteViewer.SeriesLiteData.registerClass('Novarad.Applications.LiteViewer.SeriesLiteData');
+}
+Type.registerNamespace('Novarad.Applications.LiteViewer.Business');
+if (typeof(Novarad.Applications.LiteViewer.Business.WindowLevel) === 'undefined') {
+Novarad.Applications.LiteViewer.Business.WindowLevel=gtc("Novarad.Applications.LiteViewer.Business.WindowLevel");
+Novarad.Applications.LiteViewer.Business.WindowLevel.registerClass('Novarad.Applications.LiteViewer.Business.WindowLevel');
+}
+if (typeof(Novarad.Applications.LiteViewer.FileAudioAndMousePosition) === 'undefined') {
+Novarad.Applications.LiteViewer.FileAudioAndMousePosition=gtc("Novarad.Applications.LiteViewer.FileAudioAndMousePosition");
+Novarad.Applications.LiteViewer.FileAudioAndMousePosition.registerClass('Novarad.Applications.LiteViewer.FileAudioAndMousePosition');
+}
+//]]>
+</script>
+
+<script src="NovaPacs%20Lite%20Viewer_files/WebResource_002.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="8FADF774">
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="ui8i1yrY7nos//0H8csY0iE3lN8tEP/nd8e9Ne1TO+bExEeeNff57ccVRbQ/wfK9E13I5rIflTPL0Eoue8TkdQV0R4keh0IKIvYjx96K5wGlKfyhbVQVOVTy5cfquBWsF+vRzThpV6eaVLNtpuzBnXYZriydZg2IcC22oOboTCLIJ5dvCCy8FgrJMTSdrt/+exqoOTo14JrYLoyehoaQXCZH8f/Ha0G9lzk7n8OqXZ4xpfbR4/jEuRVN5kZ9NzcyLESm0GX0FO7req6I9DUhHcAqvLhGPsr0EfRFtx0YMw0AYgQLxxMRBO5wsM0PEwi7uGOkSqFwWcjFsteB7kuBU6MEygJIz5Z0CVTiVixAIXmbat/79KLY3qnrRMs7tPkDvFFc9lxws5xJxsLQEV909+g2sst9JVFsBPaSrNmHTIERWGixP6D+lUXtJE1K3cUs2a1bUacl0v4H32MTEmwdFh3PlaD93CoU+131YKXUpJ3XuYlPQXZyqvvT8gEwPjWmt0EBKnBKzAjBTUnCUYebfqNWa5opCnSCAjb/pKU5LNjxHNRty975orWqL+UFu5QzhWzYdKVVxUIWQZsT4sDNFelceexCHrDTNTeZaWLhNCF9FJ/ZvzcTssZlItFIzAVOTRZiDvo5h6Qzpl0vvb7mRJDh5bU+tYcnE4ZRF4VaRpcmHUuLnsvIa4eDExlVE5lODgX7XrP4V/o3ed8+18U9cvixsfH4w95/bXkIY6sqiMFj+HfE16nZnZAh8lAIm3Lvgf8uLXvFncdomjv64bdM7Ey8nXE/17o0xMjrHVc9EWXKzZDjcyRVF/4t2Uuhdcundq+wmfAQ8VA3MTsx6u+ymy4oI06T6e8/ZJbHqk4d6JMpWt8UjCArYbTCi1jFe2JHontDAXvUf8QrwKcd6esgQTMtKihsQ8NHHA0mnj4B2o6iDL5qyk1jT8M9vf+8tAnSkuzpBP08Di8jVR56IGBugwrGdmYAX7ggn5OAdbTAFgciaO1kJbXt8yHE5Itt7DlM0i4LBFNRfoznccZNEdgGJ0mHxtDTsHdCklmG5SuN6Fw1hVi05MjXDCXsMUboZryEq+fqblbcS+hiqZ1PC4sBXy2d1ugsP6jQ9psCSJHM0AH66m8Kh6XYnldP/V3ao4Ac0gvZLilXIirdOZjYIGdeGrauXppV+vse3mrUiIWUPmrPHbYqJJeYR/mHplo1QZtm/UlbFqp7Zv34BGx+zGTDDPsgrS+tcgR1n5J4WoZICLE=">
+</div>
+		<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'form', ['tsearchFilterUpdatePanel','','tSeriesUpdatePanel',''], ['getPatientStudiesBtn',''], [], 90, '');
+//]]>
+</script>
+
+			<!-- toolMenu --->
+		<div id="toolMenu" style="left: 535px; top: 2px; position: absolute; z-index: 9999; background-color: transparent; vertical-align: top;">
+	
+					<ul id="dock">
+						<li id="toolMenuStudyBrowser" title="Click to open the study browser" onclick="studyBrowser.Show(); return false;">
+							<img src="NovaPacs%20Lite%20Viewer_files/48_StudyBrowser.png" onmouseover="enlarge(this)" onmouseout="reduce(this)" width="24">
+						</li>	
+						<li id="toolMenuLayOut" title="Click to change the image layout.">
+							<img src="NovaPacs%20Lite%20Viewer_files/48_LayOut.png" onmouseover="enlarge(this)" onmouseout="reduce(this)" width="24">
+						</li>
+						<li id="toolMenuMeasure" title="Click to activate measuring tool." onclick="measure.MeasureMode();">
+							<img src="NovaPacs%20Lite%20Viewer_files/48_Measure.png" id="toolMenuMeasureIcon" onclick="ToggleIcon(this);" onmouseover="enlarge(this)" onmouseout="reduce(this)" width="24">
+						</li>
+						<li id="toolMenuZoom" title="Click to activate zooming tool." onclick="zoom.ToggleZoom(2);">
+							<img id="toolMenuZoomIcon" src="NovaPacs%20Lite%20Viewer_files/48_Zoom.png" onclick="ToggleIcon(this);" onmouseover="enlarge(this)" onmouseout="reduce(this)" width="24">
+						</li>
+						<li id="toolMenuWindowLevel" title="Click to view window-level presets.">
+							<img src="NovaPacs%20Lite%20Viewer_files/48_WindowLevel.png" onmouseover="enlarge(this)" onmouseout="reduce(this)" width="24">
+						</li>
+						<li id="toolMenuComparison" title="Click to split window for viewing an additional series" onclick="comparison.ComparisonMode();">
+							<img id="toolMenuComparisonIcon" src="NovaPacs%20Lite%20Viewer_files/48_Comparison.png" onclick="ToggleIcon(this);" onmouseover="enlarge(this)" onmouseout="reduce(this)" width="24">
+						 </li>
+						<li id="toolMenuReport" title="Click to view Diagnostic Report." onclick="report.LaunchReport();">
+							<img id="toolMenuReportIcon" src="NovaPacs%20Lite%20Viewer_files/48_ReportAvailable.gif" onmouseover="enlarge(this)" onmouseout="reduce(this)" width="24">
+						 </li>
+						<li id="toolMenuShowLabels" title="Click to hide/show labels on images." onclick="image.ToggleLabel();">
+							<img src="NovaPacs%20Lite%20Viewer_files/48_Labels.png" onmouseover="enlarge(this)" onmouseout="reduce(this)" width="24">
+						</li>
+						<li id="toolMenuHelp" title="Click to view help menu" onclick="ShowHelpMenu(true);">
+							<img src="NovaPacs%20Lite%20Viewer_files/help.png" onmouseover="enlarge(this)" onmouseout="reduce(this)" width="24">
+						</li>
+						<li id="toolMenuLogOut" title="Click to logout" onclick="__doPostBack('LogOutFakeBtn','')">
+							<img src="NovaPacs%20Lite%20Viewer_files/32_logout.gif" onmouseover="enlarge(this)" onmouseout="reduce(this)" width="24">
+						</li>
+					</ul>
+		
+		
+</div>
+		<div id="layoutDiv" class="toolMenu" style="width: 55px; font: 10px Verdana; right:15px; top:15px;
+			position: absolute; z-index: 9999; background-color: White; display:none;">
+			<table cellspacing="0" cellpadding="5">
+				<tbody><tr id="layoutDivOption1" onclick="layOut.ChangeLayOut(1,1); " style="margin-left: 10px;" onmouseover="this.style.border='solid thin #ff6600'; this.style.color ='#ff6600';" onmouseout="this.style.backgroundColor='white'; this.style.color='black';">
+	<td>
+						<img id="1X1" src="NovaPacs%20Lite%20Viewer_files/menu_item_selected.gif" alt="" style="visibility: hidden;"></td>
+	<td>
+						1 X 1</td>
+</tr>
+
+				<tr id="layoutDivOption2" onclick="layOut.ChangeLayOut(1,2); " style="margin-left: 10px;" onmouseover="this.style.border='solid thin #ff6600'; this.style.color ='#ff6600';" onmouseout="this.style.backgroundColor='white'; this.style.color='black';">
+	<td>
+						<img id="1X2" src="NovaPacs%20Lite%20Viewer_files/menu_item_selected.gif" alt="" style="visibility: hidden;"></td>
+	<td>
+						1 X 2</td>
+</tr>
+
+				<tr id="layoutDivOption3" onclick="layOut.ChangeLayOut(1,3); " style="margin-left: 10px;" onmouseover=" this.style.border='solid thin #ff6600'; this.style.color ='#ff6600';" onmouseout="this.style.backgroundColor='white'; this.style.color='black';">
+	<td>
+						<img id="1X3" src="NovaPacs%20Lite%20Viewer_files/menu_item_selected.gif" alt="" style="visibility: hidden;"></td>
+	<td>
+						1 X 3</td>
+</tr>
+
+				<tr id="Tr1" onclick="layOut.ChangeLayOut(2,1); " style="margin-left: 10px;" onmouseover="this.style.border='solid thin #ff6600'; this.style.color ='#ff6600';" onmouseout="this.style.backgroundColor='white'; this.style.color='black';">
+	<td>
+						<img id="2X1" src="NovaPacs%20Lite%20Viewer_files/menu_item_selected.gif" alt="" style="visibility: hidden;"></td>
+	<td>
+						2 X 1</td>
+</tr>
+
+				<tr id="Tr2" onclick="layOut.ChangeLayOut(2,2); " style="margin-left: 10px;" onmouseover="this.style.border='solid thin #ff6600'; this.style.color ='#ff6600';" onmouseout="this.style.backgroundColor='white'; this.style.color='black';">
+	<td>
+						<img id="2X2" src="NovaPacs%20Lite%20Viewer_files/menu_item_selected.gif" alt="" style="visibility: hidden;"></td>
+	<td>
+						2 X 2</td>
+</tr>
+
+				<tr id="Tr3" onclick="layOut.ChangeLayOut(2,3); " style="margin-left: 10px;" onmouseover="this.style.border='solid thin #ff6600'; this.style.color ='#ff6600';" onmouseout="this.style.backgroundColor='white'; this.style.color='black';">
+	<td>
+						<img id="2X3" src="NovaPacs%20Lite%20Viewer_files/menu_item_selected.gif" alt="" style="visibility: hidden;"></td>
+	<td>
+						2 X 3</td>
+</tr>
+
+			</tbody></table>
+		</div>
+		
+		
+		<div id="windowLevelDiv" class="toolMenu" style="width: 100px; display:none; font: 10px Verdana;
+			position: absolute; z-index: 9999; background-color: White;">
+		<table id="windowLevelDivtable"><tbody><tr id="0"><td><img id="BoneSeries1img" src="NovaPacs%20Lite%20Viewer_files/menu_item_notselected.jpg"></td><td>Bone</td></tr><tr id="1"><td><img id="LungSeries1img" src="NovaPacs%20Lite%20Viewer_files/menu_item_notselected.jpg"></td><td>Lung</td></tr><tr id="2"><td><img id="W/L Preset 3Series1img" src="NovaPacs%20Lite%20Viewer_files/menu_item_notselected.jpg"></td><td>W/L Preset 3</td></tr><tr id="3"><td><img id="W/L Preset 4Series1img" src="NovaPacs%20Lite%20Viewer_files/menu_item_notselected.jpg"></td><td>W/L Preset 4</td></tr><tr id="4"><td><img id="W/L Preset 5Series1img" src="NovaPacs%20Lite%20Viewer_files/menu_item_notselected.jpg"></td><td>W/L Preset 5</td></tr><tr id="5"><td><img id="W/L Preset 6Series1img" src="NovaPacs%20Lite%20Viewer_files/menu_item_notselected.jpg"></td><td>W/L Preset 6</td></tr><tr id="6"><td><img id="W/L Preset 7Series1img" src="NovaPacs%20Lite%20Viewer_files/menu_item_notselected.jpg"></td><td>W/L Preset 7</td></tr><tr id="7"><td><img id="W/L Preset 8Series1img" src="NovaPacs%20Lite%20Viewer_files/menu_item_notselected.jpg"></td><td>W/L Preset 8</td></tr><tr id="8"><td><img id="W/L Preset 9Series1img" src="NovaPacs%20Lite%20Viewer_files/menu_item_notselected.jpg"></td><td>W/L Preset 9</td></tr><tr id="9"><td><img id="W/L Preset 10Series1img" src="NovaPacs%20Lite%20Viewer_files/menu_item_notselected.jpg"></td><td>W/L Preset 10</td></tr><tr id="10"><td><img id="W/L Preset 11Series1img" src="NovaPacs%20Lite%20Viewer_files/menu_item_notselected.jpg"></td><td>W/L Preset 11</td></tr><tr id="11"><td><img id="W/L Preset 12Series1img" src="NovaPacs%20Lite%20Viewer_files/menu_item_notselected.jpg"></td><td>W/L Preset 12</td></tr><tr id="12"><td><img id="DefaultSeries1img" src="NovaPacs%20Lite%20Viewer_files/menu_item_selected.dib"></td><td>Default</td></tr></tbody></table></div>
+		<!-- End of toolMenu -->
+		<!-- toolMenuComp --->
+		<div id="toolMenuComp" style="top: 2px;
+			left: 150px; font: 10px Verdana; position: absolute; z-index: 9999; background-color:Transparent; display:none;">
+	
+			<ul id="dockComp">
+						<li id="toolMenuStudyBrowserComp" title="Click to open the study browser" onclick="studyBrowserComp.Show();  return false;">
+							<img src="NovaPacs%20Lite%20Viewer_files/48_StudyBrowser.png" onmouseover="enlarge(this)" onmouseout="reduce(this)" width="24">
+						</li>
+						<li id="toolMenuLayOutComp" title="Click to change the image layout.">
+							<img src="NovaPacs%20Lite%20Viewer_files/48_LayOut.png" onmouseover="enlarge(this)" onmouseout="reduce(this)" width="24">
+						</li>
+						<li id="toolMenuMeasureComp" title="Click to activate measuring tool." onclick=" measureComp.MeasureMode();">
+							<img src="NovaPacs%20Lite%20Viewer_files/48_Measure.png" id="toolMenuMeasureIconComp" onclick="ToggleIcon(this);" onmouseover="enlarge(this)" onmouseout="reduce(this)" width="24">
+						</li>	
+						<li id="toolMenuZoomComp" title="Click to activate zooming tool." onclick="zoomComp.ToggleZoom(2);">
+							<img id="toolMenuZoomIconComp" src="NovaPacs%20Lite%20Viewer_files/48_Zoom.png" onclick="ToggleIcon(this);" onmouseover="enlarge(this)" onmouseout="reduce(this)" width="24">
+						</li>
+						<li id="toolMenuWindowLevelComp" title="Click to view window-level presets.">
+							<img src="NovaPacs%20Lite%20Viewer_files/48_WindowLevel.png" onmouseover="enlarge(this)" onmouseout="reduce(this)" width="24">
+						</li>
+						<li id="toolMenuComparisonComp" title="Click to split window for viewing an additional series" onclick="ToggleIcon(this); comparison.ComparisonMode();">
+							<img id="toolMenuComparisonIconComp" src="NovaPacs%20Lite%20Viewer_files/48_Comparison.png" onclick="ToggleIcon(this);" onmouseover="enlarge(this)" onmouseout="reduce(this)" width="24">
+						</li>
+						<li id="toolMenuReportComp" title="Click to view Diagnostic Report." onclick="reportComp.LaunchReport();">
+							<img id="toolMenuReportCompIcon" src="NovaPacs%20Lite%20Viewer_files/48_Reports.png" onmouseover="enlarge(this)" onmouseout="reduce(this)" width="24">
+						</li>
+						<li id="toolMenuShowLabelsComp" title="Click to hide/show labels on images." onclick="imageComp.ToggleLabel();">
+							<img src="NovaPacs%20Lite%20Viewer_files/48_Labels.png" onmouseover="enlarge(this)" onmouseout="reduce(this)" width="24">
+						</li>
+						<li id="toolMenuHelpComp" title="Click to view help menu" onclick="ShowHelpMenu(true);">
+							<img src="NovaPacs%20Lite%20Viewer_files/help.png" onmouseover="enlarge(this)" onmouseout="reduce(this)" width="24">
+						</li>
+					</ul>
+		
+</div>
+		<div id="layoutDivComp" class="toolMenu" style="width: 55px; font: 10px Verdana;
+			position: absolute; z-index: 9999; background-color: White; display:none;">
+			<table cellspacing="0" cellpadding="5">
+				<tbody><tr id="Tr15" onclick="layOutComp.ChangeLayOut(1,1); " style="margin-left: 10px;" onmouseover=" this.style.border='solid thin #ff6600'; this.style.color ='#ff6600';" onmouseout="this.style.backgroundColor='White'; this.style.color='black';">
+	<td>
+						<img id="1X1Comp" src="NovaPacs%20Lite%20Viewer_files/menu_item_selected.gif" alt="" style="visibility: hidden;"></td>
+	<td>
+						1 X 1</td>
+</tr>
+
+				<tr id="Tr16" onclick="layOutComp.ChangeLayOut(1,2); " style="margin-left: 10px;" onmouseover=" this.style.border='solid thin #ff6600'; this.style.color ='#ff6600';" onmouseout="this.style.backgroundColor='White'; this.style.color='black';">
+	<td>
+						<img id="1X2Comp" src="NovaPacs%20Lite%20Viewer_files/menu_item_selected.gif" alt="" style="visibility: hidden;"></td>
+	<td>
+						1 X 2</td>
+</tr>
+
+				<tr id="Tr17" onclick="layOutComp.ChangeLayOut(1,3); " style="margin-left: 10px;" onmouseover=" this.style.border='solid thin #ff6600'; this.style.color ='#ff6600';" onmouseout="this.style.backgroundColor='White'; this.style.color='black';">
+	<td>
+						<img id="1X3Comp" src="NovaPacs%20Lite%20Viewer_files/menu_item_selected.gif" alt="" style="visibility: hidden;"></td>
+	<td>
+						1 X 3</td>
+</tr>
+
+				<tr id="Tr4" onclick="layOutComp.ChangeLayOut(2,1); " style="margin-left: 10px;" onmouseover=" this.style.border='solid thin #ff6600'; this.style.color ='#ff6600';" onmouseout="this.style.backgroundColor='white'; this.style.color='black';">
+	<td>
+						<img id="2X1Comp" src="NovaPacs%20Lite%20Viewer_files/menu_item_selected.gif" alt="" style="visibility: hidden;"></td>
+	<td>
+						2 X 1</td>
+</tr>
+
+				<tr id="Tr5" onclick="layOutComp.ChangeLayOut(2,2); " style="margin-left: 10px;" onmouseover=" this.style.border='solid thin #ff6600'; this.style.color ='#ff6600';" onmouseout="this.style.backgroundColor='white'; this.style.color='black';">
+	<td>
+						<img id="2X2Comp" src="NovaPacs%20Lite%20Viewer_files/menu_item_selected.gif" alt="" style="visibility: hidden;"></td>
+	<td>
+						2 X 2</td>
+</tr>
+
+				<tr id="Tr6" onclick="layOutComp.ChangeLayOut(2,3); " style="margin-left: 10px;" onmouseover=" this.style.border='solid thin #ff6600'; this.style.color ='#ff6600';" onmouseout="this.style.backgroundColor='white'; this.style.color='black';">
+	<td>
+						<img id="2X3Comp" src="NovaPacs%20Lite%20Viewer_files/menu_item_selected.gif" alt="" style="visibility: hidden;"></td>
+	<td>
+						2 X 3</td>
+</tr>
+
+			</tbody></table>
+		</div>
+		
+		<div id="windowLevelDivComp" class="toolMenu" style="width: 100px; display: none;
+			font: 10px Verdana; position: absolute; z-index: 9999; background-color: White;">
+		</div>
+		<!-- End of toolMenu -->
+		
+		<table style="border:0px; margin:0px; " width="100%" cellspacing="0" cellpadding="0">
+			<tbody><tr>
+				<td style="width:50%;">
+					<div id="Series1Div" style="background-color:transparent;  height:100%; top:0px; border:0px;  margin: 0px; padding: 0; position:absolute; width:100%;">
+						
+						<div id="CacheImg" style="position:relative; "></div>
+				<div id="ImgPrimDiv" runat="server" class="DivViewerFull" style="width: 1226px; height: 574px;"><table id="ImgPrimDivTable"><tbody><tr><td id="ImgPrimDiv0"><div id="ImgPrimDiv0overLayDetails" class="Labels"><div style="background-color:Transparent; float:left;  top:0;  Left:5; width:467px;"><div style="background-color:Transparent; float:left;  top:0;  Left:0; text-align:left;"><div id="ImgPrimDiv0overLayDetails1" style="background-color:Transparent; float:left; position:absolute;  top:554px; Left:5px; text-align:left;"></div><a style="color:#7fb714; ">CARPIO, DOMINADOR SR. ORTIZ</a><br><a>ID: 3233165 (PHI-SPMC)</a><br><a style="text-align:left;  color:#7fb714; ">DOB: 9/17/1944</a><br><br></div><div style="background-color:Transparent; float:right;  top:0;  right:5; text-align:right;"><a style=" color:#7fb714; ">Supine AP</a><br><a>Acc: 2019269229</a><br><a style=" color:#7fb714;">IM# 1</a><br></div><img style="position:relative; float:left; left:5px; cursor:hand;display:none;" title="Voice annotation available" src="NovaPacs%20Lite%20Viewer_files/voice16.png" id="reportAvailable" runat="Server" onclick="annotation.SetUpAnnotationDiv(1,false);"></div></div><div id="ImgPrimDiv0Measure"></div><img id="ImgPrim0" class="ImgPosition0" style="" src="NovaPacs%20Lite%20Viewer_files/JpegGenerator.jpg" longdesc="0:0"></td></tr></tbody></table></div></div></td>
+				<td style="width:50%;">
+					<div id="Series2Div" style="background-color:transparent; height:100%; top:0px; border-left:ridge 2px Scrollbar;  margin: 0px; padding: 0; display:none;">
+						<div id="Div2" style="position: relative;  right: 57px; ">
+				</div></div></td>
+			</tr>
+		</tbody></table>
+		
+		
+		<div id="PrimaryThumb" style="position: absolute; z-index: 9999; float: left; left: 0px; top: 272px;">
+			<table width="57" cellspacing="0" cellpadding="2">
+				<tbody><tr align="center">
+					<td><a style="BORDER-RIGHT: #efefff 1px solid; BORDER-TOP: #efefff 1px solid; DISPLAY: inline; FONT-WEIGHT: bold;FONT-SIZE: 7pt;Z-INDEX: 9999;VERTICAL-ALIGN: baseline; BORDER-LEFT: #efefff 1px solid; WIDTH: 50px; COLOR: #ffffcc; BORDER-BOTTOM: #efefff 1px solid; FONT-FAMILY: verdana;  BACKGROUND-COLOR: #366ab3; TEXT-ALIGN:center;">
+						Images</a></td>
+				</tr>
+				<tr>
+					<td align="center"><a id="previousPage" onclick="PreviousPage(this);"><img src="NovaPacs%20Lite%20Viewer_files/go-previous.gif" id="CurrentSeriesThumbsgo-previous" style="display:none;"></a></td>
+				</tr>
+			</tbody></table>
+			<table cellspacing="2" cellpadding="0">
+				<tbody><tr>
+					<td><div id="CurrentSeriesThumbsDiv"><dl id="CurrentSeriesThumbs"><dt id="dt0"><a id="Series10"><div style="position:relative; font-size:small; color:#7fb714; ">1</div></a><img id="CurrentSeriesThumbsImg0" src="NovaPacs%20Lite%20Viewer_files/JpegGenerator_002.jpg" style="border: thin solid rgb(255, 102, 0);" width="50" lang="1.2.392.200036.9107.307.11753.1175319090809652.122:1"></dt></dl></div></td>
+				</tr>
+			</tbody></table>
+			<table width="57" cellspacing="0" cellpadding="2">
+				<tbody><tr>
+					<td align="center"><a id="nextPage" onclick="NextPage(this);"><img src="NovaPacs%20Lite%20Viewer_files/go-next.gif" id="CurrentSeriesThumbsgo-next" style="display:none;"></a></td>
+				</tr>
+			</tbody></table>
+		</div>
+		<div id="CompThumb" style="position:absolute; display:none; right:0px; float:right; z-index:9999;">
+				<table width="57" cellspacing="0" cellpadding="2">
+					<tbody><tr align="right">
+						<td align="center"><a style="BORDER-RIGHT: #efefff 1px solid; BORDER-TOP: #efefff 1px solid; DISPLAY: inline; FONT-WEIGHT: bold;FONT-SIZE: 7pt;Z-INDEX: 9999;VERTICAL-ALIGN: baseline; BORDER-LEFT: #efefff 1px solid; WIDTH: 50px; COLOR: #ffffcc; BORDER-BOTTOM: #efefff 1px solid; FONT-FAMILY: verdana;  BACKGROUND-COLOR: #366ab3; TEXT-ALIGN:center;">Images</a></td>
+					</tr>
+					<tr>
+						<td align="center"><a id="previousPageComp" onclick="PreviousPage(this);"><img src="NovaPacs%20Lite%20Viewer_files/go-previous.gif" id="CurrentSeriesThumbsCompgo-previous" style="display:none;"></a></td>
+					</tr>
+				</tbody></table>
+				<table style="position:inherit;" cellspacing="0" cellpadding="2">
+					<tbody><tr>
+						<td><div id="CurrentSeriesThumbsDivComp" style="height:340px;"></div></td>
+					</tr>
+				</tbody></table>
+				<table width="57" cellspacing="0" cellpadding="2">
+					<tbody><tr>
+						<td align="center"><a id="nextPageComp" onclick="NextPage(this);"><img src="NovaPacs%20Lite%20Viewer_files/go-next.gif" id="CurrentSeriesThumbsCompgo-next" style="display:none;"></a></td>
+					</tr>
+				</tbody></table>
+		</div>
+		<div id="StudySeriesThumbStrip" style="position:absolute; display:none; right:5px; float:right; width:50px; cursor:hand; z-index:9999;">
+			<table width="50" cellspacing="0" cellpadding="2">
+				<tbody><tr align="center">
+					<td><a style="BORDER-RIGHT: #efefff 1px solid; BORDER-TOP: #efefff 1px solid; DISPLAY: inline; FONT-WEIGHT: bold;FONT-SIZE: 7pt;Z-INDEX: 9999;VERTICAL-ALIGN: baseline; BORDER-LEFT: #efefff 1px solid; WIDTH: 50px; COLOR: #ffffcc; BORDER-BOTTOM: #efefff 1px solid; FONT-FAMILY: verdana;  BACKGROUND-COLOR: #366ab3; TEXT-ALIGN:center;">
+						Series</a></td>
+				</tr>
+			</tbody></table>
+			<table cellspacing="0" cellpadding="2">
+				<tbody><tr>
+					<td><div id="SeriesThumbsDiv"></div></td>
+				</tr>
+			</tbody></table>
+		</div>
+		
+		<input name="hdSplitScreen" type="hidden" id="hdSplitScreen" value="false">
+		<input name="hdSeries" type="hidden" id="hdSeries" value="Series1">
+		<input type="hidden" name="ViewStudyFirstSeries" id="ViewStudyFirstSeries" value="false">
+		<input type="hidden" name="hdScrollPos" id="hdScrollPos" value="0">
+		<input type="submit" name="LogOutFakeBtn" value="" id="LogOutFakeBtn" class="FakeBtns">
+		<input type="submit" name="dummyButton" value="" id="dummyButton" style="display:none;">
+		
+		<input type="hidden" value="0" id="theValue">
+		<div id="AnnotationDiv" style="position: fixed; display: none; border: 3px ridge black; background-color: black; z-index: 100001;">
+		<div id="annotationTopBar" style=" height:22px; width:100%; background-image:url(Images/WindowHeader.png); background-repeat:repeat-x; position:absolute;  z-index:9999;">
+			<img src="NovaPacs%20Lite%20Viewer_files/voice16.png" alt="" style=" position:absolute; top:2px; z-index:9999;  left:3px;">
+			<a style=" position:absolute;  z-index:9999; top:0px; left:23px;"></a>
+			
+			<input type="image" name="dummyCloseBtn" id="dummyCloseBtn" src="NovaPacs%20Lite%20Viewer_files/Close.JPG" onclick="annotation.Close();" style="border-width:0px;display:none; position:absolute; z-index:9999; top:0px; right:0px; float:right;">
+		</div>
+			<!--VideoPluginBegin-->
+			    
+			<!--end-->
+			<img src="NovaPacs%20Lite%20Viewer_files/pointer.png" id="annotationPointer" style=" position:relative; display:none;  z-index:9999; ">
+		</div> 
+		<img src="NovaPacs%20Lite%20Viewer_files/16_ReportAvailable.gif" style="display:none;" id="reportAvailable">
+		
+		
+		
+		
+		
+
+		
+		
+<div id="HelpInstructions" style=" position:absolute; z-index:9999; width:625px; height:375px; display:none;  background-color:white; color:Black; border-top-style:ridge; border-top-width:medium; border-bottom-style:ridge; border-bottom-width:medium; border-left-style:ridge; border-left-width:medium; border-right-style:ridge; border-right-width:medium;">
+			<div id="Unnamed2_HelpCloseBtn" style="position:absolute;  right:0px; z-index:9999;">
+				<img src="NovaPacs%20Lite%20Viewer_files/Close.JPG" onclick="ShowHelpMenu(false);" style="cursor:hand;" title="Click to close help menu.">
+			</div>
+			<div style="margin-top:15px;  position:absolute; z-index:9999; width:160px; height:325px;   border-right-style:ridge; border-right-width:thin;">
+				<div style="margin-right:10px;"><img src="NovaPacs%20Lite%20Viewer_files/help.gif"><b>&nbsp;Help Menu</b><hr></div>
+				<a href="#Unnamed2_TreeView1_SkipLink"><img alt="Skip Navigation Links." src="NovaPacs%20Lite%20Viewer_files/WebResource_002.gif" style="border-width:0px;" width="0" height="0"></a><div id="Unnamed2_TreeView1" style="color:Blue;">
+	<table style="border-width:0;" cellspacing="0" cellpadding="0">
+		<tbody><tr>
+			<td><a id="Unnamed2_TreeView1n0" href="javascript:TreeView_ToggleNode(Unnamed2_TreeView1_Data,0,document.getElementById('Unnamed2_TreeView1n0'),' ',document.getElementById('Unnamed2_TreeView1n0Nodes'))"><img src="NovaPacs%20Lite%20Viewer_files/WebResource_003.gif" alt="Collapse Features" style="border-width:0;"></a></td><td class="Unnamed2_TreeView1_2 Unnamed2_TreeView1_4" style="white-space:nowrap;"><a class="Unnamed2_TreeView1_0 Unnamed2_TreeView1_1 Unnamed2_TreeView1_3" href="javascript:void(0);" target="_self" onclick="javascript:TreeView_SelectNode(Unnamed2_TreeView1_Data, this,'Unnamed2_TreeView1t0');javascript:TreeView_ToggleNode(Unnamed2_TreeView1_Data,0,document.getElementById('Unnamed2_TreeView1n0'),' ',document.getElementById('Unnamed2_TreeView1n0Nodes'))" id="Unnamed2_TreeView1t0">Features</a></td>
+		</tr>
+	</tbody></table><div id="Unnamed2_TreeView1n0Nodes" style="display:block;">
+		<table style="border-width:0;" cellspacing="0" cellpadding="0">
+			<tbody><tr>
+				<td><div style="width:20px;height:1px"></div></td><td><img src="NovaPacs%20Lite%20Viewer_files/WebResource.gif" alt=""></td><td class="Unnamed2_TreeView1_2" style="white-space:nowrap;"><a class="Unnamed2_TreeView1_0 Unnamed2_TreeView1_1" href="javascript:ShowHelpTopic('helpStb');" target="_self" onclick="javascript:TreeView_SelectNode(Unnamed2_TreeView1_Data, this,'Unnamed2_TreeView1t1');" id="Unnamed2_TreeView1t1">Study Browser</a></td>
+			</tr>
+		</tbody></table><table style="border-width:0;" cellspacing="0" cellpadding="0">
+			<tbody><tr>
+				<td><div style="width:20px;height:1px"></div></td><td><img src="NovaPacs%20Lite%20Viewer_files/WebResource.gif" alt=""></td><td class="Unnamed2_TreeView1_2" style="white-space:nowrap;"><a class="Unnamed2_TreeView1_0 Unnamed2_TreeView1_1" href="javascript:ShowHelpTopic('helpComp');" target="_self" onclick="javascript:TreeView_SelectNode(Unnamed2_TreeView1_Data, this,'Unnamed2_TreeView1t2');" id="Unnamed2_TreeView1t2">Split Screen</a></td>
+			</tr>
+		</tbody></table><table style="border-width:0;" cellspacing="0" cellpadding="0">
+			<tbody><tr>
+				<td><div style="width:20px;height:1px"></div></td><td><img src="NovaPacs%20Lite%20Viewer_files/WebResource.gif" alt=""></td><td class="Unnamed2_TreeView1_2" style="white-space:nowrap;"><a class="Unnamed2_TreeView1_0 Unnamed2_TreeView1_1" href="javascript:ShowHelpTopic('helpReport');" target="_self" onclick="javascript:TreeView_SelectNode(Unnamed2_TreeView1_Data, this,'Unnamed2_TreeView1t3');" id="Unnamed2_TreeView1t3">Report</a></td>
+			</tr>
+		</tbody></table><table style="border-width:0;" cellspacing="0" cellpadding="0">
+			<tbody><tr>
+				<td><div style="width:20px;height:1px"></div></td><td><img src="NovaPacs%20Lite%20Viewer_files/WebResource.gif" alt=""></td><td class="Unnamed2_TreeView1_2" style="white-space:nowrap;"><a class="Unnamed2_TreeView1_0 Unnamed2_TreeView1_1" href="javascript:ShowHelpTopic('helpSeriesNav');" target="_self" onclick="javascript:TreeView_SelectNode(Unnamed2_TreeView1_Data, this,'Unnamed2_TreeView1t4');" id="Unnamed2_TreeView1t4">Series Navigation</a></td>
+			</tr>
+		</tbody></table><table style="border-width:0;" cellspacing="0" cellpadding="0">
+			<tbody><tr>
+				<td><div style="width:20px;height:1px"></div></td><td><img src="NovaPacs%20Lite%20Viewer_files/WebResource.gif" alt=""></td><td class="Unnamed2_TreeView1_2" style="white-space:nowrap;"><a class="Unnamed2_TreeView1_0 Unnamed2_TreeView1_1" href="javascript:ShowHelpTopic('helpHelp');" target="_self" onclick="javascript:TreeView_SelectNode(Unnamed2_TreeView1_Data, this,'Unnamed2_TreeView1t5');" id="Unnamed2_TreeView1t5">Help</a></td>
+			</tr>
+		</tbody></table>
+	</div><table style="border-width:0;" cellspacing="0" cellpadding="0">
+		<tbody><tr>
+			<td><a id="Unnamed2_TreeView1n6" href="javascript:TreeView_ToggleNode(Unnamed2_TreeView1_Data,6,document.getElementById('Unnamed2_TreeView1n6'),' ',document.getElementById('Unnamed2_TreeView1n6Nodes'))"><img src="NovaPacs%20Lite%20Viewer_files/WebResource_003.gif" alt="Collapse Tools" style="border-width:0;"></a></td><td class="Unnamed2_TreeView1_2 Unnamed2_TreeView1_4" style="white-space:nowrap;"><a class="Unnamed2_TreeView1_0 Unnamed2_TreeView1_1 Unnamed2_TreeView1_3" href="javascript:void(0);" target="_self" onclick="javascript:TreeView_SelectNode(Unnamed2_TreeView1_Data, this,'Unnamed2_TreeView1t6');javascript:TreeView_ToggleNode(Unnamed2_TreeView1_Data,6,document.getElementById('Unnamed2_TreeView1n6'),' ',document.getElementById('Unnamed2_TreeView1n6Nodes'))" id="Unnamed2_TreeView1t6">Tools</a></td>
+		</tr>
+	</tbody></table><div id="Unnamed2_TreeView1n6Nodes" style="display:block;">
+		<table style="border-width:0;" cellspacing="0" cellpadding="0">
+			<tbody><tr>
+				<td><div style="width:20px;height:1px"></div></td><td><img src="NovaPacs%20Lite%20Viewer_files/WebResource.gif" alt=""></td><td class="Unnamed2_TreeView1_2" style="white-space:nowrap;"><a class="Unnamed2_TreeView1_0 Unnamed2_TreeView1_1" href="javascript:ShowHelpTopic('helpLayout');" target="_self" onclick="javascript:TreeView_SelectNode(Unnamed2_TreeView1_Data, this,'Unnamed2_TreeView1t7');" id="Unnamed2_TreeView1t7">LayOut</a></td>
+			</tr>
+		</tbody></table><table style="border-width:0;" cellspacing="0" cellpadding="0">
+			<tbody><tr>
+				<td><div style="width:20px;height:1px"></div></td><td><img src="NovaPacs%20Lite%20Viewer_files/WebResource.gif" alt=""></td><td class="Unnamed2_TreeView1_2" style="white-space:nowrap;"><a class="Unnamed2_TreeView1_0 Unnamed2_TreeView1_1" href="javascript:ShowHelpTopic('helpMeasure');" target="_self" onclick="javascript:TreeView_SelectNode(Unnamed2_TreeView1_Data, this,'Unnamed2_TreeView1t8');" id="Unnamed2_TreeView1t8">Measure</a></td>
+			</tr>
+		</tbody></table><table style="border-width:0;" cellspacing="0" cellpadding="0">
+			<tbody><tr>
+				<td><div style="width:20px;height:1px"></div></td><td><img src="NovaPacs%20Lite%20Viewer_files/WebResource.gif" alt=""></td><td class="Unnamed2_TreeView1_2" style="white-space:nowrap;"><a class="Unnamed2_TreeView1_0 Unnamed2_TreeView1_1" href="javascript:ShowHelpTopic('helpZoom');" target="_self" onclick="javascript:TreeView_SelectNode(Unnamed2_TreeView1_Data, this,'Unnamed2_TreeView1t9');" id="Unnamed2_TreeView1t9">Magnification</a></td>
+			</tr>
+		</tbody></table><table style="border-width:0;" cellspacing="0" cellpadding="0">
+			<tbody><tr>
+				<td><div style="width:20px;height:1px"></div></td><td><img src="NovaPacs%20Lite%20Viewer_files/WebResource.gif" alt=""></td><td class="Unnamed2_TreeView1_2" style="white-space:nowrap;"><a class="Unnamed2_TreeView1_0 Unnamed2_TreeView1_1" href="javascript:ShowHelpTopic('helpWL');" target="_self" onclick="javascript:TreeView_SelectNode(Unnamed2_TreeView1_Data, this,'Unnamed2_TreeView1t10');" id="Unnamed2_TreeView1t10">Window Level</a></td>
+			</tr>
+		</tbody></table>
+	</div><table style="border-width:0;" cellspacing="0" cellpadding="0">
+		<tbody><tr>
+			<td><a id="Unnamed2_TreeView1n11" href="javascript:TreeView_ToggleNode(Unnamed2_TreeView1_Data,11,document.getElementById('Unnamed2_TreeView1n11'),' ',document.getElementById('Unnamed2_TreeView1n11Nodes'))"><img src="NovaPacs%20Lite%20Viewer_files/WebResource_003.gif" alt="Collapse Menu" style="border-width:0;"></a></td><td class="Unnamed2_TreeView1_2 Unnamed2_TreeView1_4" style="white-space:nowrap;"><a class="Unnamed2_TreeView1_0 Unnamed2_TreeView1_1 Unnamed2_TreeView1_3" href="javascript:void(0);" target="_self" onclick="javascript:TreeView_SelectNode(Unnamed2_TreeView1_Data, this,'Unnamed2_TreeView1t11');javascript:TreeView_ToggleNode(Unnamed2_TreeView1_Data,11,document.getElementById('Unnamed2_TreeView1n11'),' ',document.getElementById('Unnamed2_TreeView1n11Nodes'))" id="Unnamed2_TreeView1t11">Menu</a></td>
+		</tr>
+	</tbody></table><div id="Unnamed2_TreeView1n11Nodes" style="display:block;">
+		<table style="border-width:0;" cellspacing="0" cellpadding="0">
+			<tbody><tr>
+				<td><div style="width:20px;height:1px"></div></td><td><img src="NovaPacs%20Lite%20Viewer_files/WebResource.gif" alt=""></td><td class="Unnamed2_TreeView1_2" style="white-space:nowrap;"><a class="Unnamed2_TreeView1_0 Unnamed2_TreeView1_1" href="javascript:ShowHelpTopic('toolsMenu');" target="_self" onclick="javascript:TreeView_SelectNode(Unnamed2_TreeView1_Data, this,'Unnamed2_TreeView1t12');" id="Unnamed2_TreeView1t12">Tools Menu</a></td>
+			</tr>
+		</tbody></table>
+	</div>
+</div><a id="Unnamed2_TreeView1_SkipLink"></a>
+			</div>
+			<div style=" margin-left:10px; margin-right:10px; overflow:auto; position:relative; height:345px;">
+				<div id="helpStb" style="position:relative; display:none; left:156px; top:14px; width:430px;  ">
+					<div><img src="NovaPacs%20Lite%20Viewer_files/16_StudyBrowser.png"><b>&nbsp;Study Browser</b><br><hr></div>
+						<p>The&nbsp;study browser is used to select and/or change the 
+series being viewed.&nbsp;This feature is enabled 
+by&nbsp;clicking&nbsp;the study browser icon 
+<img src="NovaPacs%20Lite%20Viewer_files/16_StudyBrowser.png" __designer:dtid="563027262832657">&nbsp;located
+ in the tools menu.&nbsp; Enter search criteria and click the search 
+button to see a list of matching studies.&nbsp; Select the appropriate 
+study and series for viewing.</p>
+							<br><i>*While the Study Browser is open all features and tools are disabled </i>
+					</div>
+				<div id="helpComp" style="position:relative; display:none; left:156px; top:14px; width:430px;  ">
+					<div><img src="NovaPacs%20Lite%20Viewer_files/16_Comparison.png"><b>&nbsp;Split Screen</b><br><hr></div>
+						<p>The NovaPacs Lite Viewer allows for comparison of series within
+ the same study or from different studies. This feature is enabled 
+by&nbsp;clicking&nbsp;the split screen icon 
+<img src="NovaPacs%20Lite%20Viewer_files/16_Comparison.png" __designer:dtid="563027262832670">&nbsp;located
+ in the tools menu. This launches the study browser prompting the 
+selection of&nbsp;a second study/series. The series 1&nbsp;will be on 
+the left and&nbsp;series 2&nbsp;on the right. To&nbsp;exit or 
+disable&nbsp;the split screen feature&nbsp;click the icon located in the
+ tools menu&nbsp;of either series. </p>
+						<br>
+					</div>
+				<div id="helpReport" style="position:relative; display:none; left:156px; top:14px; width:430px;  ">
+					<div><img src="NovaPacs%20Lite%20Viewer_files/16_reports.png"><b>&nbsp;Reports</b><br><hr></div>
+						<p>The NovaPacs Lite Viewer allows for the viewing of diagnostic 
+reports. This feature is enabled by&nbsp;clicking&nbsp;the&nbsp;reports 
+icon&nbsp;<img src="NovaPacs%20Lite%20Viewer_files/16_reports.png" __designer:dtid="563027262832681">&nbsp;located in the tools menu. The report will be opened in a new window. </p>
+						<br>
+					</div>
+				<div id="helpHelp" style="position:relative; display:none; left:156px; top:14px; width:430px;  ">
+					<div><img src="NovaPacs%20Lite%20Viewer_files/help.gif"><b>&nbsp;Help</b><br><hr></div>
+						<p>Help is available on any of the features or tools by&nbsp;clicking the&nbsp;help icon located in the tools menu. </p>
+						<br>
+					</div>
+				<div id="helpSeriesNav" style="position:relative; display:none; left:156px; top:14px; width:430px;  ">
+					<div><b>&nbsp;Series Navigation</b><br><hr></div>
+						<p>To navigate to other series in the same study, simply select 
+the thumbnail image corresponding with the series on the thumbnail list 
+at the right side of the screen.</p>
+						<br>
+				</div>
+				<div id="helpLayout" style="position:relative; display:none; left:156px; top:14px; width:430px;">
+					<div><img src="NovaPacs%20Lite%20Viewer_files/16_layOut.png"><b>&nbsp;LayOut Options</b><br><hr></div>
+					<br>The NovaPacs Lite Viewer&nbsp;supports various image layout options.<br>
+							<p>The LayOut may be changed by&nbsp;clicking the LayOut Options icon<em> </em><img src="NovaPacs%20Lite%20Viewer_files/16_layOut.png" __designer:dtid="563027262832703">&nbsp;located
+ in the tools menu. &nbsp;A new selectable menu will appear&nbsp;below 
+the LayOut options icon. From the new menu select the desired layout.</p><i>
+								</i> </div>
+				<div id="helpMeasure" style="position:relative; display:none; left:156px; top:14px; width:433px; ">
+					<div><img src="NovaPacs%20Lite%20Viewer_files/16_Measure.png"><b>&nbsp;Measuring</b><br><hr></div>
+					<p>The NovaPacs Lite Viewer allows the users to perform measuring 
+on the Images. This feature can be enabled by&nbsp;selecting the Measure
+ Icon 
+<img src="NovaPacs%20Lite%20Viewer_files/16_Measure.png" __designer:dtid="563027262832722">&nbsp;located
+ in the tools menu.&nbsp; With the measure feature turned on, hold the 
+left mouse button down and drag the desired distance to be measured.</p> </div>
+				<div id="helpZoom" style="position:relative; display:none; left:156px; top:14px; width:433px;">
+					<div><img src="NovaPacs%20Lite%20Viewer_files/16_Zoom.png"><b>&nbsp;Magnification</b><br><hr></div>
+					The NovaPacs Lite Viewer allows users&nbsp;a magnification option.<p>
+						This&nbsp;tool may be&nbsp;enabled by clicking the Magnification&nbsp;Option Icon<em> <img src="NovaPacs%20Lite%20Viewer_files/16_Zoom.png" __designer:dtid="563027262832732">&nbsp; </em>located in the tool menu.&nbsp;With the&nbsp;Magnification Option enabled&nbsp;move the mouse over the images. &nbsp;</p> <br> </div>
+				<div id="helpWL" style="position:relative; display:none; left:156px; top:14px; width:433px;">
+				<div><img src="NovaPacs%20Lite%20Viewer_files/16_WindowLevel.png"><b>&nbsp;Window Level Options</b><br><hr></div>
+				<p>The NovaPacs Lite Viewer allows the users to change the Window 
+&amp; Level of images.  This feature can be enabled by by clicking the 
+right mouse button 
+							 and moving the mouse pointer directly above the Window Level 
+							 option displayed.  A new selectable menu will appear to the 
+right with preset window level options based on the modality type of the
+ series.  
+							 By selecting one of the preset options the window level will be 
+changed.</p><br><i>
+								*Changing the window level only affects images being viewed in the Lite Viewer.  It does not modify the actual images.</i> </div>
+			
+			
+				<div id="helpToolMenu" style="position:relative; display:inherit; left:156px; top:14px; width:430px;">
+					<div><b>&nbsp;Tools &amp; Features</b><br><hr></div>
+					<p>The Features and Tools menu can be accessed at any time by&nbsp;selecting the Help Icon.</p></div>
+				<div id="toolsMenu" style="position:relative; display:none; left:156px; top:14px; width:430px;">
+					<div><b>&nbsp;Tools Menu</b><br><hr></div>
+						<img src="NovaPacs%20Lite%20Viewer_files/toolmenu.JPG">
+							<p>The Tools menu&nbsp; is located at the top of the browser.&nbsp;</p>
+						<br>
+				</div>
+			</div>
+			
+		</div>
+
+		<div id="imgPoweredBy" style="position: absolute; display: none; bottom: 0px; right: 0px;
+			z-index: 9999; border: solid 1px white;">
+			
+		</div>
+		<div id="Help" style="position: absolute; top: 35%; left: 25%; z-index: 9999;">
+		</div>
+		<div id="dummyControl" style="position: absolute; top: 15px; left: 100px; z-index: 9999;">
+		</div>
+		<!-- Study Browser -->
+		
+		<!-- End of Study Browser --->
+		
+		
+	
+		
+		
+		
+		<div id="PopUpDiv" style="display:none; position:absolute; width:200px; height:110px; border:ridge thin #ff6600; background-color:Silver;">
+			<table>
+				<tbody><tr>
+					<td><span id="popUpImgDesc"></span></td>
+					<td></td>
+				</tr>
+			</tbody></table>
+		</div>
+	
+	
+<script type="text/javascript">
+//<![CDATA[
+var Unnamed2_TreeView1_ImageArray =  new Array('', '', '', '/NovaWeb/Lite/WebResource.axd?d=MLj3SlCKfmmki_ZiacTzuHqZRSQeL-PY8oHjhJT2mZnI4MzZUh4OY8pf4XZXF7OjYloXQ5NBmUFvcStV1VELpvqIfsSz0qEkLfyCABzhIj2hq1xT4yZiMcmNil5S7qFv0&t=636935173199995647', '/NovaWeb/Lite/WebResource.axd?d=vX5uVyCd9YiGZZqWCFwRFEsqEK5UB9P_9I3SqlvnvnlGOEC_LeSRjsZqts6cuETSMriL0x4YBmsErkHHlvtgmqs_M0yArEsxSg6Cq9rHmXs1sIw9qGei76lWRIxRxdD10&t=636935173199995647', '/NovaWeb/Lite/WebResource.axd?d=cXxdaBzx7gLdp2yVX-LYh4OmoXYExsa3ORSVl764T7SC-4l4u70q5r9GDmcw3h6PyBu0q-BaWGyHJGPVL4aQ8jcwNYhFJjQ_FR2zT0GHjpSuJ8RXy2xB1qnZuv8aCCUR0&t=636935173199995647');
+var Page_Validators =  new Array(document.getElementById("DOBBox_MaskedDateValidator"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var DOBBox_MaskedDateValidator = document.all ? document.all["DOBBox_MaskedDateValidator"] : document.getElementById("DOBBox_MaskedDateValidator");
+DOBBox_MaskedDateValidator.IsMaskedEdit = "true";
+DOBBox_MaskedDateValidator.ValidEmpty = "true";
+DOBBox_MaskedDateValidator.MaximumValue = "10/16/2019";
+DOBBox_MaskedDateValidator.MinimumValue = "1/1/1900";
+DOBBox_MaskedDateValidator.InitialValue = "";
+DOBBox_MaskedDateValidator.ValidationExpression = "";
+DOBBox_MaskedDateValidator.ClientValidationFunction = "ValidateDate";
+DOBBox_MaskedDateValidator.TargetValidator = "DOBBox_txtDate";
+DOBBox_MaskedDateValidator.EmptyValueMessage = "The date entered must be a valid date after 1/1/1900.";
+DOBBox_MaskedDateValidator.EmptyValueText = "The date entered must be a valid date after 1/1/1900.";
+DOBBox_MaskedDateValidator.MaximumValueMessage = "The date must be a valid date between 1/1/1900 and today.";
+DOBBox_MaskedDateValidator.MaximumValueText = "";
+DOBBox_MaskedDateValidator.MinimumValueMessage = "";
+DOBBox_MaskedDateValidator.MinimumValueText = "";
+DOBBox_MaskedDateValidator.InvalidValueMessage = "The date entered must be a valid date after 1/1/1900.";
+DOBBox_MaskedDateValidator.InvalidValueText = "";
+DOBBox_MaskedDateValidator.InvalidValueCssClass = "MaskedEditError";
+DOBBox_MaskedDateValidator.CssBlurNegative = "MaskedEditBlurNegative";
+DOBBox_MaskedDateValidator.CssFocus = "MaskedEditFocus";
+DOBBox_MaskedDateValidator.CssFocusNegative = "MaskedEditFocusNegative";
+DOBBox_MaskedDateValidator.TooltipMessage = "";
+DOBBox_MaskedDateValidator.FirstMaskPosition = "0";
+DOBBox_MaskedDateValidator.DateSeparator = "/";
+DOBBox_MaskedDateValidator.DateFormat = "MDY";
+DOBBox_MaskedDateValidator.Century = "1900";
+DOBBox_MaskedDateValidator.evaluationfunction = "MaskedEditValidatorDate";
+DOBBox_MaskedDateValidator.LastMaskPosition = "11";
+DOBBox_MaskedDateValidator.controltovalidate = "DOBBox_txtDate";
+DOBBox_MaskedDateValidator.errormessage = "The date entered must be a valid date after 1/1/1900.";
+DOBBox_MaskedDateValidator.display = "None";
+DOBBox_MaskedDateValidator.validationGroup = "MaskDate";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+var gridDiv = document.getElementById('studyGridDiv'); gridDiv.onscroll = SaveScrollLocation; gridDiv.scrollTop = 0;$get('ViewStudyFirstSeries').value = 'true'; GetFirstSeriesInStudy('1.2.840.10008.114051.832916.288496548.1289677946.493949445'); $get('ViewStudyFirstSeries').value = 'false';
+WebForm_InitCallback();var Unnamed2_TreeView1_Data = new Object();
+Unnamed2_TreeView1_Data.images = Unnamed2_TreeView1_ImageArray;
+Unnamed2_TreeView1_Data.collapseToolTip = "Collapse {0}";
+Unnamed2_TreeView1_Data.expandToolTip = "Expand {0}";
+Unnamed2_TreeView1_Data.expandState = theForm.elements['Unnamed2_TreeView1_ExpandState'];
+Unnamed2_TreeView1_Data.selectedNodeID = theForm.elements['Unnamed2_TreeView1_SelectedNode'];
+(function() {
+  for (var i=0;i<6;i++) {
+  var preLoad = new Image();
+  if (Unnamed2_TreeView1_ImageArray[i].length > 0)
+    preLoad.src = Unnamed2_TreeView1_ImageArray[i];
+  }
+})();
+Unnamed2_TreeView1_Data.lastIndex = 13;
+Unnamed2_TreeView1_Data.populateLog = theForm.elements['Unnamed2_TreeView1_PopulateLog'];
+Unnamed2_TreeView1_Data.treeViewID = 'Unnamed2$TreeView1';
+Unnamed2_TreeView1_Data.name = 'Unnamed2_TreeView1_Data';
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        WebForm_AutoFocus('patientIDBox');Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","DropShadow":true,"OkControlID":"btnClose","PopupControlID":"pnlStudyBrowser","dynamicServicePath":"/novaweb/lite/Viewer.aspx","id":"ModalPopUp"}, null, null, $get("dummyButton"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","OkControlID":"dummyCloseBtn","PopupControlID":"AnnotationDiv","dynamicServicePath":"/novaweb/lite/Viewer.aspx","id":"AnnotationModalPopUp"}, null, null, $get("dummyButton"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.PopupControlBehavior, {"PopupControlID":"HelpInstructions","Position":4,"dynamicServicePath":"/novaweb/lite/Viewer.aspx","id":"PopEx"}, null, null, $get("Help"));
+});
+
+document.getElementById('DOBBox_MaskedDateValidator').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('DOBBox_MaskedDateValidator'));
+}
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.CalendarBehavior, {"button":$get("DOBBox_dateOfBirthImg"),"id":"DOBBox_dateCalenderExtender"}, null, null, $get("DOBBox_txtDate"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.MaskedEditBehavior, {"AutoComplete":false,"ClientStateFieldID":"DOBBox_txtDateExtender_ClientState","CultureAMPMPlaceholder":"AM;PM","CultureCurrencySymbolPlaceholder":"$","CultureDateFormat":"MDY","CultureDatePlaceholder":"/","CultureDecimalPlaceholder":".","CultureName":"en-US","CultureThousandsPlaceholder":",","CultureTimePlaceholder":":","Mask":"99/99/9999","MaskType":1,"PromptCharacter":" ","id":"DOBBox_txtDateExtender"}, null, null, $get("DOBBox_txtDate"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ValidatorCalloutBehavior, {"closeImageUrl":"Images/close.gif","id":"DOBBox_MaskedDateValidatorExtender","warningIconImageUrl":"Images/alert.gif","width":"175px"}, null, null, $get("DOBBox_MaskedDateValidator"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.UI._UpdateProgress, {"associatedUpdatePanelId":null,"displayAfter":500,"dynamicLayout":true}, null, null, $get("LoadingProgress"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.PopupControlBehavior, {"PopupControlID":"layoutDiv","Position":3,"dynamicServicePath":"/novaweb/lite/Viewer.aspx","id":"layOutExtender"}, null, null, $get("toolMenuLayOut"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.PopupControlBehavior, {"PopupControlID":"windowLevelDiv","Position":3,"dynamicServicePath":"/novaweb/lite/Viewer.aspx","id":"windowLevelExtender"}, null, null, $get("toolMenuWindowLevel"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.PopupControlBehavior, {"PopupControlID":"layoutDivComp","Position":3,"dynamicServicePath":"/novaweb/lite/Viewer.aspx","id":"layOutExtenderComp"}, null, null, $get("toolMenuLayOutComp"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.PopupControlBehavior, {"PopupControlID":"windowLevelDivComp","Position":3,"dynamicServicePath":"/novaweb/lite/Viewer.aspx","id":"windowLevelExtenderComp"}, null, null, $get("toolMenuWindowLevelComp"));
+});
+//]]>
+</script>
+<div id="ModalPopUp_foregroundElement" style="display: none; position: fixed; z-index: 100001;"><div id="pnlStudyBrowser" style="display: none; background-color:#f5f5f5; border:ridge 3px #313131; ">
+	
+			
+			<div id="studyBrowserDiv" class="DivStudyBrowser" style="background-color:#f5f5f5;visibility:visible;">
+				<div style=" height:21px; width:100%; background-image:url(Images/WindowHeader.png); background-repeat:repeat-x; width: 806px; visibility: visible;
+					 border-bottom: ridge 2px black; vertical-align: middle;" id="Div1">
+					<input type="image" name="btnClose" id="btnClose" src="NovaPacs%20Lite%20Viewer_files/Close.JPG" onclick="Help;" style="border-width:0px;float: right; visibility:hidden;">
+					<input type="image" name="ImageButton1" id="ImageButton1" src="NovaPacs%20Lite%20Viewer_files/21_StudyBrowser.png" style="border-width:0px;float: Left;"><label style="left: 5px; float: left; font-weight: bold;
+							color:#707070">&nbsp;Novapacs Lite Viewer - Study Browser</label>
+				</div>
+				    <span id="searchFilterUpdatePanel">
+					    <div style="width:100%; background-color:#282828; color:#9e9e9e; font-size:small;  font-weight:bold; height:72px; vertical-align:middle;">
+							<div style="height:8px; width:800px;"></div>
+							<div>
+								<div style="width:200px; float:left; margin:0 5 0 0;">
+									<div style="float:left; margin-right:10px; width:75px; line-height:22px;">
+										<b style="float:right; ">Patient ID:</b>
+									</div>
+
+									<div style="float:left;">
+										<input name="patientIDBox" type="text" id="patientIDBox" tabindex="1" class="inputControl">
+									</div>
+								</div>
+								<div style="width:200px; float:left;">
+									<div style="float:left; margin-right:10px; width:75px; line-height:22px;">
+										<b style="float:right;">Last Name:</b>
+									</div>
+									<div style="float:left;">
+										<input name="lastNameBox" type="text" id="lastNameBox" tabindex="3" class="inputControl">
+									</div>
+								</div>
+								<div style="width:200px; float:left;">
+									<div style="float:left; margin-right:10px; width:75px; line-height:22px;">
+										<b style="float:right;">First Name:</b>
+									</div>
+									<div style="float:left;">
+										<input name="firstNameBox" type="text" id="firstNameBox" tabindex="5" class="inputControl">
+									</div>
+								</div>
+								<div style="width:200px; float:left;">
+									<div style="float:left;  margin-right:10px; width:75px; line-height:22px;">
+										<b style="float:right;">Birth Date:</b>
+									</div>
+									<div style="float:left; color:black;">
+										
+<!-- Important the AjaxControlToolkit used in NovaRIS has been modified by Brent Glover for the purpose of improving upon bugs 
+     found in Microsoft's masking.  The changes are small and can easily be added to an updated version of the AjaxControlToolkit -->
+<input name="DOBBox$txtDate" type="text" id="DOBBox_txtDate" tabindex="7" class="inputControl">&nbsp;	
+<span id="DOBBox_MaskedDateValidator" style="color:Red;display:none;"></span>
+ 
+<input type="image" name="DOBBox$dateOfBirthImg" id="DOBBox_dateOfBirthImg" src="NovaPacs%20Lite%20Viewer_files/calendar.dib" style="border-width:0px;display:none">
+
+<input type="hidden" name="DOBBox$txtDateExtender_ClientState" id="DOBBox_txtDateExtender_ClientState">
+
+ 
+
+<input name="DOBBox$alternateDate" type="text" id="DOBBox_alternateDate" style="display:none;">
+ 	
+<script type="text/javascript" language="javascript">
+	function ValidateDate(source, clientside_arguments) {
+		maxDate = new Date($get(source.id).MaximumValue.replace(/\./g, "/"));
+		minDate = new Date($get(source.id).MinimumValue.replace(/\./g, "/"));
+		clientEnteredDate = new Date(clientside_arguments.Value.replace(/\./g, "/"));
+
+		if (clientEnteredDate <= maxDate && minDate <= clientEnteredDate) {
+			clientside_arguments.IsValid = true;
+		}
+		else {
+			clientside_arguments.IsValid = false;
+		}
+	}
+</script>
+
+									</div>
+								</div>
+							</div>
+							<div style="width:800px; line-height:8px;"></div>
+							<div>
+								<div style="width:200px; float:left; margin:0 5 0 0;">
+									<div style="float:left; margin-right:10px; width:75px; width:75px; line-height:22px;">
+										<b style="float:right;">Time Frame:</b>
+									</div>
+									<div style="float:left;">
+										<select name="timeFrameList" id="timeFrameList" tabindex="9" class="inputControlDDL">
+		<option value="null">All</option>
+		<option value="12">12 Hours</option>
+		<option value="24">24 Hours</option>
+		<option selected="selected" value="72">3 Days</option>
+		<option value="168">7 Days</option>
+		<option value="336">14 Days</option>
+		<option value="720">30 Days</option>
+
+	</select>
+									</div>
+									</div>
+								<div style="width:200px; float:left;">
+									<div style="float:left; margin-right:10px; width:75px; line-height:22px;">
+										<b style="float:right;">Modality:</b>
+									</div>
+									<div style="float:left;">
+										<select name="modalityList" id="modalityList" tabindex="11" class="inputControlDDL">
+		<option selected="selected" value="All">All</option>
+		<option value="CT">CT</option>
+		<option value="CR">CR</option>
+		<option value="DX">DX</option>
+		<option value="MR">MR</option>
+		<option value="RF">RF</option>
+		<option value="KO">KO</option>
+		<option value="MG">MG</option>
+		<option value="PR">PR</option>
+		<option value="US">US</option>
+		<option value="SC">SC</option>
+		<option value="SR">SR</option>
+		<option value="XA">XA</option>
+		<option value="DOC">DOC</option>
+
+	</select>
+									</div>
+								</div>
+								<div style="width:200px; float:left;">
+												<div style="float:left; margin-right:10px; width:75px; line-height:22px;">
+										<b style="float:right;">Accession #:</b>
+									</div>
+												<div style="float:left;">
+										<input name="accessionBox" type="text" id="accessionBox" tabindex="13" class="inputControl">
+									</div>
+									</div>
+								<div style="width:200px; float:left;">
+									
+									<div style="float:right;">
+										<input type="submit" name="resetFields" value="Reset" onclick="ResetFilters(); return false;" id="resetFields" tabindex="17" class="button">
+									</div>
+									<div style="float:right;  margin-right:3px;">
+										<input type="submit" name="getPatientStudiesBtn" value="Search" id="getPatientStudiesBtn" tabindex="15" class="button">
+									</div>
+								</div>
+							</div>
+							<div style="height:8px; width:800px;"></div>
+						</div>
+						
+						
+						<!-- GridView dgPatients -->
+						<center>
+						<div id="LoadingProgress" style="display:none;" role="status" aria-hidden="true">
+		
+					            <div style="position:absolute; border:ridge 3px #313131; color:#9e9e9e; background-color:black; z-index:9999;left:43%; width:125px; height:125px; top:150px; ">
+					                <table style="position:relative;">
+					                    <tbody><tr>
+					                        <td><b>Loading...</b></td>
+					                    </tr>
+					                    <tr>
+					                        <td align="center"><img src="NovaPacs%20Lite%20Viewer_files/loading.gif"></td>
+					                    </tr>
+					                </tbody></table>
+					            </div>
+					        
+	</div>
+					    </center>
+						<table cellspacing="0" cellpadding="0">
+							<tbody><tr>
+								<td>
+									<a id="A2" style="float:left; top:0px; font-size:small; font-weight:bold;">STUDIES:</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+					
+							<div id="studyGridDiv" class="DivScrollableGrid" title="Patient Studies" style="height:155px;">
+							<div>
+		<table title="Patient Studies" class="GridViewStyle" id="dgPatients" style="width:780px;border-collapse:collapse;" cellspacing="0" border="0" align="Left">
+			<tbody><tr class="GridViewHeaderStyle">
+				<th scope="col">&nbsp;</th><th class="HideButton" scope="col">&nbsp;</th><th scope="col"><a href="javascript:__doPostBack('dgPatients','Sort$PatientID')">Patient ID</a></th><th scope="col" style="text-decoration:underline;"><a href="javascript:__doPostBack('dgPatients','Sort$LastName')">Patient Name</a></th><th scope="col"><a href="javascript:__doPostBack('dgPatients','Sort$BirthTime')">DOB</a></th><th scope="col"><a href="javascript:__doPostBack('dgPatients','Sort$Accession')">Accession</a></th><th scope="col" style="text-decoration:underline;"><a href="javascript:__doPostBack('dgPatients','Sort$StudyDate')">Study Date</a></th><th scope="col"><a href="javascript:__doPostBack('dgPatients','Sort$Modality')">Modality</a></th><th scope="col"><a href="javascript:__doPostBack('dgPatients','Sort$AnatomicalArea')">Anatomical Area</a></th><th scope="col"><a href="javascript:__doPostBack('dgPatients','Sort$HasReport')">Reports</a></th>
+			</tr><tr onmouseover="this.style.cursor='hand'; this.style.textDecoration='underline'; this.style.color='#ff6600';" onmouseout="this.style.textDecoration='none'; this.style.color='black';" onclick="javascript:__doPostBack('dgPatients','Select$0')">
+				<td><a onclick="javascript:ViewStudy('1.2.840.10008.114051.832916.288496548.1289677946.493949445');return false;" href="javascript:__doPostBack('dgPatients','View$0')">View</a></td><td class="HideButton"><a href="javascript:__doPostBack('dgPatients','Select$0')">Select</a></td><td>3233165</td><td>
+											CARPIO, DOMINADOR SR. ORTIZ
+										</td><td>9/17/1944</td><td>2019269229</td><td>
+											9/8/2019 8:16 PM
+										</td><td>CR</td><td>Chest PA (ADULT)</td><td>
+									    <input type="image" name="dgPatients$ctl02$ctl02" src="NovaPacs%20Lite%20Viewer_files/16_reports.png" onclick="javascript:report.LaunchReport('http://10.1.80.42/novaris/report.aspx?PatientID=3233165&amp;Accession=2019269229&amp;ExamDate=9%2f8%2f2019+8%3a16%3a26+PM&amp;StudyUID=1.2.840.10008.114051.832916.288496548.1289677946.493949445&amp;Ticket=[TICKET]&amp;PatientGroup=PHI-SPMC&amp;type=child');" style="border-width:0px;">
+									    </td>
+			</tr>
+		</tbody></table>
+	</div>
+						</div>
+								</td>
+							</tr>
+						</tbody></table>
+						
+							<!-- End of GridView dgSeries -->
+						<!-- ObjectDataSources -->
+						
+						
+						
+						
+						<!-- ObjectDataSources -->
+						
+					</span>
+						<!-- End of GridView dgPatients -->
+						<!-- GridView dgSeries -->
+						<hr>
+						<table cellspacing="0" cellpadding="0">
+							<tbody><tr>
+								<td>
+									<a id="A1" style="left:5px; float:left; top:0px; font-size:small; font-weight:bold;">SERIES:</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div id="seriesGridDiv" class="DivScrollableGrid" style="height:150px;" gridlines="None">
+								<span id="SeriesUpdatePanel">
+								    
+									<div>
+		<table title="Series in the selected study" class="GridViewStyle" onclick="AddPrimaryElement();" id="dgSeries" style="width:780px;border-collapse:collapse;" cellspacing="0" border="0" align="Left">
+			<tbody><tr class="GridViewSeriesHeaderStyle">
+				<th scope="col">&nbsp;</th><th class="HideButton" scope="col">&nbsp;</th><th scope="col" style="text-decoration:underline;">SeriesID</th><th scope="col" style="text-decoration:underline;">Modality</th><th scope="col" style="text-decoration:underline;">Description</th><th scope="col" style="text-decoration:underline;">ModifiedDate</th><th scope="col" style="text-decoration:underline;"># Images</th><th scope="col">Key Images</th>
+			</tr><tr onmouseover="this.style.cursor='hand'; this.style.textDecoration='underline'; this.style.color='#ff6600';" onmouseout="this.style.textDecoration='none';this.style.color='black';" onclick="GetSeriesImageNum('1.2.392.200036.9107.307.11753.1175319090809652.122');this.className='thumb'">
+				<td><a href="javascript:__doPostBack('dgSeries','$2')">View</a></td><td class="HideButton"><a href="javascript:__doPostBack('dgSeries','Select$2')">Select</a></td><td>2</td><td>CR</td><td>Supine AP</td><td>
+													9/8/2019 8:17 PM
+												</td><td>1</td><td></td>
+			</tr>
+		</tbody></table>
+	</div>
+								</span>
+						</div>
+								</td>
+							</tr>
+						</tbody></table>
+						
+						
+					
+			</div>
+		
+		
+</div></div><div id="ModalPopUp_backgroundElement" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;" class="modalBackground"></div><div id="AnnotationModalPopUp_backgroundElement" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;" class="modalBackground"></div></form>
+
+
+
+
+<script type="text/javascript">
+try{
+    // Register handlers for Application model events
+   // Sys.Application.add_init(onInit);
+   // Sys.Application.add_load(onLoad);
+
+    // Registern handlers for PageRequestManager events
+		with(Sys.WebForms.PageRequestManager.getInstance()) {
+		//  add_initializeRequest(onInitializeRequest);
+		 //add_beginRequest(onBeginRequest);
+		 // add_pageLoading(onPageLoading);
+		  //add_pageLoaded(onPageLoaded);
+		  add_endRequest(onEndRequest );
+		 }   
+    }
+   catch(ex){}
+     
+     
+function onEndRequest(sender, args){  
+    try{    
+        // This event is always raised, even when an error occurs on the server.
+        var details = null;
+        var error = null;
+            if(args != null){
+                error = args.get_error();
+                if (error != null){
+                   details = "Error: " + error.message;
+                   // Let the framework know that the error has been handled, 
+		           // so it doesn't throw the JavaScript alert.
+                    args.set_errorHandled(true);
+                }  
+            }  
+        }
+        catch(ex){}
+       }
+       function doUnload() {
+       	PageMethods.Logout();
+       }
+
+       function ResetFilters() {
+       	$get('patientIDBox').value = "";
+       	$get('lastNameBox').value = "";
+       	$get('firstNameBox').value = "";
+       	$get(String.format("{0}$txtDate","DOBBox")).value = ""; //String.format("{0}$txtDate", "DOBBox")
+       	$get('timeFrameList').selectedIndex = 0;
+       	$get('modalityList').selectedIndex = 0;
+       	$get('accessionBox').value = "";
+       }
+
+
+</script>
+</body></html>

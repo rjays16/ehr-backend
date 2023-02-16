@@ -1,0 +1,1 @@
+ALTER TABLE `ehrv2`.`smed_diagnostic_order_rad` CHANGE `is_deleted` `is_deleted` TINYINT(1) DEFAULT 0 NULL;

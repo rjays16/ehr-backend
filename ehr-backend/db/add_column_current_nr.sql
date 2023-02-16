@@ -1,0 +1,4 @@
+/*[31-Oct 12:05:12 PM][12180 ms]*/ ALTER TABLE `ehrv2_prod`.`smed_dept_encounter` ADD COLUMN `current_ward_nr` VARCHAR(15) NULL AFTER `deptenc_code`; 
+/*[31-Oct 12:16:23 PM][5841 ms]*/ ALTER TABLE `ehrv2_prod`.`smed_dept_encounter` ADD CONSTRAINT FOREIGN KEY (`room_no`) REFERENCES `ehrv2_prod`.`smed_nurse_room_catalog`(`nr`) ON UPDATE CASCADE, DROP FOREIGN KEY `smed_dept_encounter_ibfk_1`; 
+/*[31-Oct 12:16:09 PM][2190 ms]*/ ALTER TABLE `ehrv2_prod`.`smed_nurse_room_catalog` CHANGE `nr` `nr` INT(11) UNSIGNED NOT NULL; 
+/*[31-Oct 12:22:28 PM][5405 ms]*/ ALTER TABLE `ehrv2_prod`.`smed_dept_encounter` CHANGE `current_ward_nr` `current_ward_nr` INT(11) UNSIGNED NULL, ADD FOREIGN KEY (`current_ward_nr`) REFERENCES `ehrv2_prod`.`smed_nurse_ward_catalog`(`nr`) ON UPDATE CASCADE; 

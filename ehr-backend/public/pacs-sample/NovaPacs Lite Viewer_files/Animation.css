@@ -1,0 +1,106 @@
+/* used to have the dock animation on the icons in toolMenu*/
+ul#dock {
+	text-align:			center;
+	list-style:			none;
+	height:				28px;
+	margin:				0;
+	padding:			0;
+	white-space:		nowrap;
+	}
+ul#dock li {
+	display:			inline;
+	margin:				0;
+	padding:			0;
+	}
+ul#dock li img {
+	border:				0;
+	padding:			0;
+	margin:				0;
+	vertical-align:		top;
+	cursor:				hand;
+	}
+/* used to have the dock animation on the icons in toolMenuComp*/
+ul#dockComp {
+	text-align:			center;
+	list-style:			none;
+	height:				28px;
+	margin:				0;
+	padding:			0;
+	white-space:		nowrap;
+	}
+ul#dockComp li {
+	display:			inline;
+	margin:				0;
+	padding:			0;
+	}
+ul#dockComp li img {
+	border:				0;
+	padding:			0;
+	margin:				0;
+	vertical-align:		top;
+	cursor:				hand;
+	}
+/* used to have animate the series thumbs*/
+dl#SeriesThumbs {
+	text-align:			right;
+	list-style:			none;
+	height:				130px;
+	margin:				0;
+	padding:			0;
+	white-space:		nowrap;
+	display:			inline;
+	}
+
+dl#SeriesThumbs dt img{
+	border:				0;
+	padding:			0;
+	margin:				0;
+	vertical-align:		top;
+	cursor:				hand;
+	}
+/* used to have animate the series thumbs*/
+dl#CurrentSeriesThumbs {
+	text-align:			left;
+	list-style:			none;
+	height:				130px;
+	margin:				0;
+	padding:			0;
+	white-space:		nowrap;
+	}
+dl#CurrentSeriesThumbs {
+	display:			inline;
+	margin:				0;
+	padding:			0;
+	}
+dl#CurrentSeriesThumbs dt img{
+	border:				0;
+	padding:			0;
+	margin:				0;
+	vertical-align:		top;
+	cursor:				hand;
+	
+	}
+/* used to have animate the series thumbs of a second series and or the right sided series*/
+dl#CurrentSeriesThumbsComp {
+	text-align:			right;
+	list-style:			none;
+	height:				130px;
+	margin:				0;
+	padding:			0;
+	white-space:		nowrap;
+	display:block;
+	}
+dl#CurrentSeriesThumbsComp {
+	display:			block;
+	margin:				0;
+	padding:			0;
+	}
+dl#CurrentSeriesThumbsComp dt img{
+	text-align:			right;
+	border:				0;
+	padding:			0;
+	margin:				0;
+	vertical-align:		top;
+	cursor:				hand;
+	
+	}
